@@ -1,0 +1,38 @@
+{
+  "name": "larabeans/locationer",
+  "description": "Apiato container to manage locations for all type of locate-able entities",
+  "type": "apiato-container",
+  "homepage": "https://larabeans.com/",
+  "version": "0.1.0",
+  "support": {
+    "issues": "https://github.com/larabeans/locationer/issues",
+    "source": "https://github.com/larabeans/locationer"
+  },
+  "authors": [
+    {
+      "name": "Ali Kazmi",
+      "email": "ali@kazmi.me"
+    }
+  ],
+  "keywords": [
+    "apiato",
+    "locations",
+    "locationer",
+    "apiato container",
+    "larabeans"
+  ],
+  "license": "MIT",
+  "require": {
+    "larabeans/core": "*"
+  },
+  "require-dev": {},
+  "extra": {
+    "apiato": {
+      "container": {
+        "name": "Locationer"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
