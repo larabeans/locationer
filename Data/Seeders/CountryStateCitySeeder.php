@@ -23,9 +23,9 @@ class CountryStateCitySeeder extends Seeder
          *                              |
          */
 
-        $countriesRaw = file_get_contents(base_path('app/Containers/Location/Data/Source/countries.json'));
-        $statesRaw = file_get_contents(base_path('app/Containers/Location/Data/Source/states.json'));
-        $citiesRaw = file_get_contents(base_path('app/Containers/Location/Data/Source/cities.json'));
+        $countriesRaw = file_get_contents(app_path('Containers/Vendor/Locationer/Data/Source/countries.json'));
+        $statesRaw = file_get_contents(app_path('Containers/Vendor/Locationer/Data/Source/states.json'));
+        $citiesRaw = file_get_contents(app_path('Containers/Vendor/Locationer/Data/Source/cities.json'));
 
         $countries = json_decode($countriesRaw, true);
         $states = json_decode($statesRaw, true);
