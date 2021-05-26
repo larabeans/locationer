@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Vendor\Locationer\Actions;
 
-use App\Containers\App\Containers\Vendor\Locationer\Tasks\DeleteCountryTask;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\DeleteCountryRequest;
+use App\Containers\Vendor\Locationer\Tasks\DeleteCountryTask;
+use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteCountryRequest;
 use App\Ship\Parents\Actions\Action;
 
 

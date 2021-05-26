@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\Tasks;
+namespace App\Containers\Vendor\Locationer\Tasks;
 
-use App\Containers\App\Containers\Vendor\Locationer\Data\Repositories\LocationRepository;
-use App\Containers\App\Containers\Vendor\Locationer\Models\Location;
+use App\Containers\Vendor\Locationer\Data\Repositories\LocationRepository;
+use App\Containers\Vendor\Locationer\Models\Location;
 use App\Ship\Exceptions\CreateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
 use Exception;

@@ -20,7 +20,7 @@
  * @apiUse             CitySuccessSingleResponse
  */
 
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers\CityController;
+use App\Containers\Vendor\Locationer\UI\API\Controllers\CityController;
 use Illuminate\Support\Facades\Route;
 
 

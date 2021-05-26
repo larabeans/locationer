@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers;
+namespace App\Containers\Vendor\Locationer\UI\API\Controllers;
 
-use App\Containers\App\Containers\Vendor\Locationer\Actions\CreateStateAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\DeleteStateAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\FindStateAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\GetAllStatesAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\UpdateStateAction;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\CreateStateRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\DeleteStateRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\FindStateRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\GetAllStatesRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\UpdateStateRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Transformers\StateTransformer;
+use App\Containers\Vendor\Locationer\Actions\CreateStateAction;
+use App\Containers\Vendor\Locationer\Actions\DeleteStateAction;
+use App\Containers\Vendor\Locationer\Actions\FindStateAction;
+use App\Containers\Vendor\Locationer\Actions\GetAllStatesAction;
+use App\Containers\Vendor\Locationer\Actions\UpdateStateAction;
+use App\Containers\Vendor\Locationer\UI\API\Requests\CreateStateRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteStateRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\FindStateRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllStatesRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateStateRequest;
+use App\Containers\Vendor\Locationer\UI\API\Transformers\StateTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
 
 /**
  * Class Controller
  *
- * @package App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers
+ * @package App\Containers\Vendor\Locationer\UI\API\Controllers
  */
 class StateController extends ApiController
 {

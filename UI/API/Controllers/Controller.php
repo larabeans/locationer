@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers;
+namespace App\Containers\Vendor\Locationer\UI\API\Controllers;
 
-use App\Containers\App\Containers\Vendor\Locationer\Actions\CreateLocationAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\DeleteLocationAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\FindLocationAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\GetAllLocationsAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\UpdateLocationAction;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\CreateLocationRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\DeleteLocationRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\GetAllLocationsRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\FindLocationRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\UpdateLocationRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Transformers\LocationTransformer;
+use App\Containers\Vendor\Locationer\Actions\CreateLocationAction;
+use App\Containers\Vendor\Locationer\Actions\DeleteLocationAction;
+use App\Containers\Vendor\Locationer\Actions\FindLocationAction;
+use App\Containers\Vendor\Locationer\Actions\GetAllLocationsAction;
+use App\Containers\Vendor\Locationer\Actions\UpdateLocationAction;
+use App\Containers\Vendor\Locationer\UI\API\Requests\CreateLocationRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteLocationRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllLocationsRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\FindLocationRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateLocationRequest;
+use App\Containers\Vendor\Locationer\UI\API\Transformers\LocationTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
 
 /**
  * Class Controller
  *
- * @package App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers
+ * @package App\Containers\Vendor\Locationer\UI\API\Controllers
  */
 class Controller extends ApiController
 {

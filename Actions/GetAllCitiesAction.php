@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Vendor\Locationer\Actions;
 
-use App\Containers\App\Containers\Vendor\Locationer\Tasks\GetAllCitiesTask;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\GetAllCitiesRequest;
+use App\Containers\Vendor\Locationer\Tasks\GetAllCitiesTask;
+use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllCitiesRequest;
 use App\Ship\Parents\Actions\Action;
 
 

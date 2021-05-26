@@ -1,10 +1,10 @@
 <?php
-namespace App\Containers\App\Containers\Vendor\Locationer\Data\Seeders;
+namespace App\Containers\Vendor\Locationer\Data\Seeders;
 
 
-use App\Containers\App\Containers\Vendor\Locationer\Tasks\CreateCityTask;
-use App\Containers\App\Containers\Vendor\Locationer\Tasks\CreateCountryTask;
-use App\Containers\App\Containers\Vendor\Locationer\Tasks\CreateStateTask;
+use App\Containers\Vendor\Locationer\Tasks\CreateCityTask;
+use App\Containers\Vendor\Locationer\Tasks\CreateCountryTask;
+use App\Containers\Vendor\Locationer\Tasks\CreateStateTask;
 use App\Ship\Parents\Seeders\Seeder;
 
 class CountryStateCitySeeder extends Seeder

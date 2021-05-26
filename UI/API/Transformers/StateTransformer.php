@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\UI\API\Transformers;
+namespace App\Containers\Vendor\Locationer\UI\API\Transformers;
 
-use App\Containers\App\Containers\Vendor\Locationer\Models\Location;
-use App\Containers\App\Containers\Vendor\Locationer\Models\State;
+use App\Containers\Vendor\Locationer\Models\Location;
+use App\Containers\Vendor\Locationer\Models\State;
 use App\Ship\Parents\Transformers\Transformer;
 
 class StateTransformer extends Transformer

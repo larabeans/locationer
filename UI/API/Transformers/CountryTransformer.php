@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\UI\API\Transformers;
+namespace App\Containers\Vendor\Locationer\UI\API\Transformers;
 
-use App\Containers\App\Containers\Vendor\Locationer\Models\Country;
-use App\Containers\App\Containers\Vendor\Locationer\Models\Location;
+use App\Containers\Vendor\Locationer\Models\Country;
+use App\Containers\Vendor\Locationer\Models\Location;
 use App\Ship\Parents\Transformers\Transformer;
 
 class CountryTransformer extends Transformer

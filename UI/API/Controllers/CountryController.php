@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers;
+namespace App\Containers\Vendor\Locationer\UI\API\Controllers;
 
-use App\Containers\App\Containers\Vendor\Locationer\Actions\CreateCountryAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\DeleteCountryAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\FindCountryAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\GetAllCountriesAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\UpdateCountryAction;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\CreateCountryRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\DeleteCountryRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\FindCountryRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\GetAllCountriesRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\UpdateCountryRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Transformers\CountryTransformer;
+use App\Containers\Vendor\Locationer\Actions\CreateCountryAction;
+use App\Containers\Vendor\Locationer\Actions\DeleteCountryAction;
+use App\Containers\Vendor\Locationer\Actions\FindCountryAction;
+use App\Containers\Vendor\Locationer\Actions\GetAllCountriesAction;
+use App\Containers\Vendor\Locationer\Actions\UpdateCountryAction;
+use App\Containers\Vendor\Locationer\UI\API\Requests\CreateCountryRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteCountryRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\FindCountryRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllCountriesRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateCountryRequest;
+use App\Containers\Vendor\Locationer\UI\API\Transformers\CountryTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
 
 /**
  * Class Controller
  *
- * @package App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers
+ * @package App\Containers\Vendor\Locationer\UI\API\Controllers
  */
 class CountryController extends ApiController
 {

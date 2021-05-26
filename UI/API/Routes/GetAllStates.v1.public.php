@@ -21,7 +21,7 @@
  * @apiUse             GeneralSuccessMultipleResponse
  */
 
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers\StateController;
+use App\Containers\Vendor\Locationer\UI\API\Controllers\StateController;
 use Illuminate\Support\Facades\Route;
 
 

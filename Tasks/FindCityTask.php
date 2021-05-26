@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\Tasks;
+namespace App\Containers\Vendor\Locationer\Tasks;
 
 use Illuminate\Support\Str;
-use App\Containers\App\Containers\Vendor\Locationer\Data\Repositories\CityRepository;
+use App\Containers\Vendor\Locationer\Data\Repositories\CityRepository;
 use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Parents\Tasks\Task;
 use Exception;

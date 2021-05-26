@@ -24,7 +24,7 @@
  * @apiUse             LocationSuccessSingleResponse
  */
 
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers\Controller;
+use App\Containers\Vendor\Locationer\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 

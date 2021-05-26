@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\Traits;
+namespace App\Containers\Vendor\Locationer\Traits;
 
-use App\Containers\App\Containers\Vendor\Locationer\Models\Location;
+use App\Containers\Vendor\Locationer\Models\Location;
 
 trait HasLocation
 {

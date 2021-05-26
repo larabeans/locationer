@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\UI\API\Transformers;
+namespace App\Containers\Vendor\Locationer\UI\API\Transformers;
 
-use App\Containers\App\Containers\Vendor\Locationer\Models\City;
+use App\Containers\Vendor\Locationer\Models\City;
 use App\Ship\Parents\Transformers\Transformer;
 
 class CityTransformer extends Transformer

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\Models;
+namespace App\Containers\Vendor\Locationer\Models;
 
 use App\Ship\Parents\Models\Model;
 
@@ -56,7 +56,7 @@ class Location extends Model
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function country(){
-        return $this->belongsTo('App\Containers\App\Containers\Vendor\Locationer\Models\Country', 'country_id');
+        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\Country', 'country_id');
     }
 
 
@@ -64,7 +64,7 @@ class Location extends Model
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function state(){
-        return $this->belongsTo('App\Containers\App\Containers\Vendor\Locationer\Models\State', 'state_id');
+        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\State', 'state_id');
     }
 
 
@@ -72,6 +72,6 @@ class Location extends Model
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function city(){
-      return $this->belongsTo('App\Containers\App\Containers\Vendor\Locationer\Models\City', 'city_id');
+      return $this->belongsTo('App\Containers\Vendor\Locationer\Models\City', 'city_id');
     }
 }

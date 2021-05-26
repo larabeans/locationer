@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers;
+namespace App\Containers\Vendor\Locationer\UI\API\Controllers;
 
-use App\Containers\App\Containers\Vendor\Locationer\Actions\CreateCityAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\DeleteCityAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\FindCityAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\GetAllCitiesAction;
-use App\Containers\App\Containers\Vendor\Locationer\Actions\UpdateCityAction;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\CreateCityRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\DeleteCityRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\FindCityRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\GetAllCitiesRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Requests\UpdateCityRequest;
-use App\Containers\App\Containers\Vendor\Locationer\UI\API\Transformers\CityTransformer;
+use App\Containers\Vendor\Locationer\Actions\CreateCityAction;
+use App\Containers\Vendor\Locationer\Actions\DeleteCityAction;
+use App\Containers\Vendor\Locationer\Actions\FindCityAction;
+use App\Containers\Vendor\Locationer\Actions\GetAllCitiesAction;
+use App\Containers\Vendor\Locationer\Actions\UpdateCityAction;
+use App\Containers\Vendor\Locationer\UI\API\Requests\CreateCityRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteCityRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\FindCityRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllCitiesRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateCityRequest;
+use App\Containers\Vendor\Locationer\UI\API\Transformers\CityTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
 
 /**
  * Class Controller
  *
- * @package App\Containers\App\Containers\Vendor\Locationer\UI\API\Controllers
+ * @package App\Containers\Vendor\Locationer\UI\API\Controllers
  */
 class CityController extends ApiController
 {

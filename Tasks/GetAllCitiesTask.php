@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\Tasks;
+namespace App\Containers\Vendor\Locationer\Tasks;
 
-use App\Containers\App\Containers\Vendor\Locationer\Data\Repositories\CityRepository;
+use App\Containers\Vendor\Locationer\Data\Repositories\CityRepository;
 use App\Ship\Parents\Tasks\Task;
 
 class GetAllCitiesTask extends Task

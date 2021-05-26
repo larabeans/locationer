@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\App\Containers\Vendor\Locationer\Traits;
+namespace App\Containers\Vendor\Locationer\Traits;
 
 use Apiato\Core\Traits\MultiTenantableScope;
 
