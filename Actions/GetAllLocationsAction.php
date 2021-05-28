@@ -9,7 +9,7 @@ use App\Ship\Parents\Actions\Action;
 
 class GetAllLocationsAction extends Action
 {
-    public function run(GetAllLocationsRequest $request) : array
+    public function run(GetAllLocationsRequest $request)
     {
         $locations = app(GetAllLocationsTask::class)->addRequestCriteria()->run();
 
