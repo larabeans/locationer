@@ -8,11 +8,16 @@
  * @apiDescription     Deletes existing city record
  *
  * @apiVersion         1.0.0
- * @apiPermission      none
+ * @apiPermission      Authenticated User
  *
- * @apiParam           {String}  id City Id
+ * @apiParam           {Integer}  id City Id
  *
- * @apiUse             CitySuccessSingleResponse
+ * @apiSuccessExample  {json}       Success-Response:
+ * HTTP/1.1 202 OK
+ * {
+ * "message": "Record Deleted Successfully."
+ * }
+ * 
  */
 
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CityController;

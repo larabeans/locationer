@@ -8,9 +8,9 @@
  * @apiDescription     Find City BY Id
  *
  * @apiVersion         1.0.0
- * @apiPermission      none
+ * @apiPermission      Authenticated User
  *
- * @apiParam           {String}  id City Id
+ * @apiParam           {Integer}  id City Id
  *
  * @apiUse             CitySuccessSingleResponse
  */

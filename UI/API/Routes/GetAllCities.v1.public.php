@@ -8,7 +8,7 @@
  * @apiDescription     Get all cities,query parameters supporting search criteria available here
  *
  * @apiVersion         1.0.0
- * @apiPermission      none
+ * @apiPermission      Authenticated User
  *
  * @apiParam           {String}  filter include columns e.g. id;name
  * @apiParam           {String}  search search columns e.g. name:search-users
