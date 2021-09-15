@@ -13,14 +13,14 @@ class CreateCityAction extends Action
 {
     public function run(CreateCityRequest $request)
     {
-        $city = app(CreateCityTask::class)->run([
+        $city = app(CreateCityTask::class)->run(
             0,
             $request->country_id,
             $request->state_id,
             $request->name,
             $request->latitude,
             $request->longitude
-        ]);
+        );
 
         return $city;
     }

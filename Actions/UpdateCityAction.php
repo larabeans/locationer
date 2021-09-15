@@ -12,7 +12,11 @@ class UpdateCityAction extends Action
     public function run(UpdateCityRequest $request)
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            "country_id",
+            "state_id",
+            "name",
+            "latitude",
+            "longitude"
         ]);
 
         $city = app(UpdateCityTask::class)->run($request->id, $data);
