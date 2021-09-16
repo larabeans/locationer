@@ -5,14 +5,14 @@
  * @apiName            updateCity
  *
  * @api                {PUT} /v1/cities/:id Update City
- * @apiDescription     Endpoint description here..
+ * @apiDescription     update city
  *
  * @apiVersion         1.0.0
- * @apiPermission      none
+ * @apiPermission      Authenticated User
  *
- * @apiParam           {String}  id
- * @apiParam           {String}  country_id
- * @apiParam           {String}  state_id
+ * @apiParam           {Integer}  id
+ * @apiParam           {Integer}  country_id
+ * @apiParam           {Integer}  state_id
  * @apiParam           {String}  name
  * @apiParam           {String}  latitude
  * @apiParam           {String}  longitude
