@@ -13,12 +13,12 @@ class CreateStateAction extends Action
 {
     public function run(CreateStateRequest $request)
     {
-        $state = app(CreateStateTask::class)->run([
+        $state = app(CreateStateTask::class)->run(
             0,
             $request->country_id,
             $request->name,
             $request->code
-        ]);
+        );
 
         return $state;
     }
