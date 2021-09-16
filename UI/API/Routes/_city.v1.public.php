@@ -10,7 +10,9 @@ HTTP/1.1 200 OK
     "id":"eqwja3vw94kzmxr0",
     "name":"City Name",
     "country_id":"eqwja3vw94kzmxr0",
+    "country_name":"Country Name"
     "state_id":"eqwja3vw94kzmxr0",
+    "state_name":"State Name"
     "latitude":null,
     "longitude":null
   },
