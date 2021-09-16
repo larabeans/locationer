@@ -8,7 +8,7 @@
  * @apiDescription     Find location by id
  *
  * @apiVersion         1.0.0
- * @apiPermission      none
+ * @apiPermission      Authenticated User
  *
  * @apiParam           {String}  id Location ID
  *

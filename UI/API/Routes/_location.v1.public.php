@@ -18,7 +18,6 @@ HTTP/1.1 200 OK
       "updated_at": "2021-01-19T06:12:35.000000Z",
       "real_id": "87dbf76c-099d-4c6c-bc8c-5c440e51a785",
       "country": {
-      "data": {
         "object": "Country",
         "id": "gomreqn3a943vxpl",
         "name": "Pakistan",
@@ -35,10 +34,8 @@ HTTP/1.1 200 OK
         "created_at": "2021-01-19T06:12:35.000000Z",
         "updated_at": "2021-01-19T06:12:35.000000Z",
         "real_id": 167
-        }
       },
       "state": {
-        "data": {
           "object": "State",
           "id": "qekr8ny0vy7b6mjx",
           "country_id": 167,
@@ -47,10 +44,8 @@ HTTP/1.1 200 OK
           "created_at": "2021-01-19T06:12:38.000000Z",
           "updated_at": "2021-01-19T06:12:38.000000Z",
           "real_id": 3169
-        }
       },
       "city": {
-        "data": {
           "object": "City",
           "id": "0o6vk48q9w04pw9j",
           "name": "Islamabad",
@@ -59,7 +54,6 @@ HTTP/1.1 200 OK
           "created_at": "2021-01-19T06:13:42.000000Z",
           "updated_at": "2021-01-19T06:13:42.000000Z",
           "real_id": 85475
-        }
       }
     }
   ],
