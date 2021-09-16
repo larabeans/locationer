@@ -85,7 +85,7 @@ class CityController extends ApiController
     {
       $city = app(DeleteCityAction::class)->run($request);
 
-      return $this->transform($city, CityTransformer::class);
+      return $this->noContent(); //$this->transform($city, CityTransformer::class);
     }
 
 }
