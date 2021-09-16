@@ -8,12 +8,12 @@
  * @apiDescription     Adds country record
  *
  * @apiVersion         1.0.0
- * @apiPermission      none
+ * @apiPermission      Authenticated User
  *
  * @apiParam           {String}  name
  * @apiParam           {String}  native
- * @apiParam           {String}  alpha2
- * @apiParam           {String}  alpha3
+ * @apiParam           {String}  alpha2 string size must be 2 characters
+ * @apiParam           {String}  alpha3 string size must be 3 characters
  * @apiParam           {String}  isd
  * @apiParam           {String}  capital
  * @apiParam           {String}  currency
