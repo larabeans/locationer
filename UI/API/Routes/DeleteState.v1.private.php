@@ -8,11 +8,15 @@
  * @apiDescription     Deletes existing state record
  *
  * @apiVersion         1.0.0
- * @apiPermission      none
+ * @apiPermission      Authenticated User
  *
- * @apiParam           {String}  id State Id
+ * @apiParam           {Integer}  id State Id
  *
- * @apiUse             StateSuccessSingleResponse
+ * @apiSuccessExample  {json}       Success-Response:
+ * HTTP/1.1 202 OK
+ * {
+ * "message": "Record Deleted Successfully."
+ * }
  */
 
 use App\Containers\Vendor\Locationer\UI\API\Controllers\StateController;
