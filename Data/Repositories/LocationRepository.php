@@ -15,7 +15,8 @@ class LocationRepository extends Repository
      */
     protected $fieldSearchable = [
         'id' => '=',
-        // ...
+        'post_code'=>'=',
+        'states'=>'='
     ];
 
 }
