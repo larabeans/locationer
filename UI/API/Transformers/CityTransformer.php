@@ -18,7 +18,8 @@ class CityTransformer extends Transformer
      * @var  array
      */
     protected $availableIncludes = [
-
+        'country',
+        'states'
     ];
 
     /**
@@ -49,5 +50,14 @@ class CityTransformer extends Transformer
         ], $response);
 
         return $response;
+    }
+    public function includeCountry(City $city)
+    {
+      return $this->item($city->country, new CountryTransformer());
+    }
+
+    public function includeStates(City $city)
+    {
+      return $this->item($city->state, new StateTransformer());
     }
 }

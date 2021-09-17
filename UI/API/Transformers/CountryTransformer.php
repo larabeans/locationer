@@ -3,6 +3,7 @@
 namespace App\Containers\Vendor\Locationer\UI\API\Transformers;
 
 use App\Containers\Vendor\Locationer\Models\Country;
+use App\Containers\Vendor\Locationer\Models\City;
 use App\Containers\Vendor\Locationer\Models\Location;
 use App\Ship\Parents\Transformers\Transformer;
 
@@ -57,13 +58,13 @@ class CountryTransformer extends Transformer
     }
 
 
-    public function includeStates(Location $location)
+    public function includeStates(Country $country)
     {
-      return $this->collection($location->states, new StateTransformer());
+      return $this->collection($country->states, new StateTransformer());
     }
 
-    public function includeCities(Location $location)
+    public function includeCities(Country $country)
     {
-      return $this->collection($location->cities, new CityTransformer());
+      return $this->collection($country->cities, new CityTransformer());
     }
 }

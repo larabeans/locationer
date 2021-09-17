@@ -19,7 +19,8 @@ class StateTransformer extends Transformer
      * @var  array
      */
     protected $availableIncludes = [
-      'cities'
+      'cities',
+      'country'
     ];
 
     /**
@@ -48,8 +49,8 @@ class StateTransformer extends Transformer
         return $response;
     }
 
-    public function includeCities(Location $location)
+    public function includeCities(State $state)
     {
-      return $this->collection($location->cities, new CityTransformer());
+      return $this->collection($state->cities, new CityTransformer());
     }
 }
