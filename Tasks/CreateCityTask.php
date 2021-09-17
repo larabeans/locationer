@@ -39,7 +39,7 @@ class CreateCityTask extends Task
             return $this->repository->create($data);
         }
         catch (Exception $exception) {
-          throw new CreateResourceFailedException();
+          throw new CreateResourceFailedException($exception);
         }
     }
 }

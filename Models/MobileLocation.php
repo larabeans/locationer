@@ -2,7 +2,8 @@
 
 namespace App\Containers\Vendor\Locationer\Models;
 
-use App\Ship\Parents\Models\Model;
+//use App\Ship\Parents\Models\Model;
+use App\Containers\Vendor\Beaner\Parents\Models\Model;
 
 class MobileLocation extends Model
 {

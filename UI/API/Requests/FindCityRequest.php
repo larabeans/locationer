@@ -25,7 +25,7 @@ class FindCityRequest extends Request
      * @var  array
      */
     protected $decode = [
-        // 'id',
+         'id',
     ];
 
     /**
@@ -35,7 +35,7 @@ class FindCityRequest extends Request
      * @var  array
      */
     protected $urlParameters = [
-        // 'id',
+         'id',
     ];
 
     /**

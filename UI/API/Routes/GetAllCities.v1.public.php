@@ -15,7 +15,7 @@
  * @apiParam           {String}  orderBy name of column e.g. id
  * @apiParam           {String}  sortedBy asc or desc
  * @apiParam           {Integer}  page page number
- * @apiParam           {String}  include country,state,city
+ * @apiParam           {String}  include country,state
  * @apiParam           {Integer}  limit records per page
  *
  * @apiUse             GeneralSuccessMultipleResponse

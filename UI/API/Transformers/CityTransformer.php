@@ -34,6 +34,10 @@ class CityTransformer extends Transformer
             'name' => $entity->name,
             'latitude' => $entity->latitude,
             'longitude' => $entity->longitude,
+            'country_id'=>$entity->country->id,
+            'country_name'=>$entity->country->name,
+            'state_id'=>$entity->state->id,
+            'state_name'=>$entity->state->name,
             'created_at' => $entity->created_at,
             'updated_at' => $entity->updated_at,
 
