@@ -7,11 +7,13 @@ use App\Containers\Vendor\Locationer\Actions\DeleteLocationAction;
 use App\Containers\Vendor\Locationer\Actions\FindLocationAction;
 use App\Containers\Vendor\Locationer\Actions\GetAllLocationsAction;
 use App\Containers\Vendor\Locationer\Actions\UpdateLocationAction;
+use App\Containers\Vendor\Locationer\Actions\GetLocationByLocatableTypeAction;
 use App\Containers\Vendor\Locationer\UI\API\Requests\CreateLocationRequest;
 use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteLocationRequest;
 use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllLocationsRequest;
 use App\Containers\Vendor\Locationer\UI\API\Requests\FindLocationRequest;
 use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateLocationRequest;
+use App\Containers\Vendor\Locationer\UI\API\Requests\GetLocationByLocatableTypeRequest;
 use App\Containers\Vendor\Locationer\UI\API\Transformers\LocationTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
@@ -30,6 +32,16 @@ class Controller extends ApiController
     public function getAllLocations(GetAllLocationsRequest $request)
     {
       $locations = app(GetAllLocationsAction::class)->run($request);
+
+      return $this->transform($locations, LocationTransformer::class);
+    }
+      /**
+     * @param GetLocationByLocatableTypeRequest $request
+     * @return array
+     */
+    public function getLocationByLocatableType(GetLocationByLocatableTypeRequest $request)
+    {
+      $locations = app(GetLocationByLocatableTypeAction::class)->run($request);
 
       return $this->transform($locations, LocationTransformer::class);
     }
