@@ -15,7 +15,7 @@ class FindLocationRequest extends Request
      * @var  array
      */
     protected $access = [
-        'permissions' => '',
+        'permissions' => 'manage-locations|view-location',
         'roles'       => '',
     ];
 

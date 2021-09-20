@@ -10,7 +10,7 @@ class GetLocationByLocatableTypeRequest extends Request
      * Define which Roles and/or Permissions has access to this request.
      */
     protected array $access = [
-        'permissions' => '',
+        'permissions' => 'manage-locations|list-locations',
         'roles'       => '',
     ];
 
