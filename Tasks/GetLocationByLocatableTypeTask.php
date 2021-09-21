@@ -25,7 +25,7 @@ class GetLocationByLocatableTypeTask extends Task
           
            foreach($locationType as $key => $value){
                if($key == $type){
-                   $index =$value;
+                   $index =$value['class_path'];
                }
               
            } 
