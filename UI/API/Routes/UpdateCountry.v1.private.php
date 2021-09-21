@@ -8,7 +8,7 @@
  * @apiDescription     Update country
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authorized User
+ * @apiPermission      Authorized User, manage-countries, update-country
  *
  * @apiParam           {Integer}  id
  * @apiParam           {String}  name

@@ -8,7 +8,7 @@
  * @apiDescription     Find City BY Id
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-cities, view-city
  *
  * @apiParam           {Integer}  id City Id
  *

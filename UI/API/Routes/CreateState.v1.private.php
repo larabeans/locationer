@@ -8,7 +8,7 @@
  * @apiDescription     Add state record to existing country
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-states, create-state
  *
  * @apiParam           {Integer}  country_id
  * @apiParam           {String}  name

@@ -8,7 +8,7 @@
  * @apiDescription     Find country by Id
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authorized User
+ * @apiPermission      Authorized User, manage-countries, view-country
  *
  * @apiParam           {Integer}  id Country Id
  *

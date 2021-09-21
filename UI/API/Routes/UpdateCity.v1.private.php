@@ -8,7 +8,7 @@
  * @apiDescription     update city
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-cities, update-city
  *
  * @apiParam           {Integer}  id
  * @apiParam           {Integer}  country_id

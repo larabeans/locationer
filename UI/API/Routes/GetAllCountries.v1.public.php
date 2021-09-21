@@ -8,7 +8,7 @@
  * @apiDescription     Get all countries,query parameters supporting search criteria available here
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authorized User
+ * @apiPermission      Authorized User, manage-countries, view-country
  *
  * @apiParam           {String}  filter include columns e.g. id;name
  * @apiParam           {String}  search search columns e.g. name:search-users

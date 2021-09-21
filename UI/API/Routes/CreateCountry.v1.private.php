@@ -8,7 +8,7 @@
  * @apiDescription     Adds country record
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-countries, create-country
  *
  * @apiParam           {String}  name
  * @apiParam           {String}  native

@@ -8,7 +8,7 @@
  * @apiDescription     Deletes existing state record
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-states, delete-state
  *
  * @apiParam           {Integer}  id State Id
  *

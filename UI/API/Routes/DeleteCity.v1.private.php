@@ -8,7 +8,7 @@
  * @apiDescription     Deletes existing city record
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-cities, delete-city
  *
  * @apiParam           {Integer}  id City Id
  *

@@ -8,9 +8,9 @@
  * @apiDescription     Return all the Locatable Type Records 
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-locations, view-locations
  *
- * @apiParam           {String}  type 
+ * @apiParam           {String}  type user,store
  *
  *@apiUse             GeneralSuccessMultipleResponse
  */

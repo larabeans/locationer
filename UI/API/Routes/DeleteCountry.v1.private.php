@@ -8,7 +8,7 @@
  * @apiDescription     Deletes existing country record
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authorized User
+ * @apiPermission      Authorized User, manage-countries, delete-country
  *
  * @apiParam           {Integer}  id Country Id
  *

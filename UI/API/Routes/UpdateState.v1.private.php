@@ -8,7 +8,8 @@
  * @apiDescription     Endpoint description here..
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-states, update-state
+ *
  *
  * @apiParam           {Integer}  id
  * @apiParam           {integer}  country_id

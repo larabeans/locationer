@@ -8,7 +8,7 @@
  * @apiDescription     Find state by Id
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-states, view-state
  *
  * @apiParam           {Integer}  id State Id
  *

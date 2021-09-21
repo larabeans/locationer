@@ -8,7 +8,7 @@
  * @apiDescription     Delete Location by Id
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-locations, delete-location
  *
  * @apiParam           {String}  id Location id
  *
