@@ -28,6 +28,10 @@ return [
     ],
 
     'locatable_types' => [
-        'user' => 'App\Containers\User\Models\User',
+        'user' => [
+            'identifier' => 'user',
+            'display_name' => 'User',
+            'class_path' => 'App\Containers\AppSection\User\Models\User'
+        ],
     ]
 ];
