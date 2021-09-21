@@ -4,7 +4,7 @@
  * @apiGroup           Location
  * @apiName            updateLocation
  *
- * @api                {PATCH} /v1/locations/:id Update a location
+ * @api                {PUT} /v1/locations/:id Update a location
  * @apiDescription     Update location by id
  *
  * @apiVersion         1.0.0
@@ -27,6 +27,6 @@ use App\Containers\Vendor\Locationer\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 
-Route::patch('locations/{id}', [Controller::class, 'updateLocation'])
+Route::put('locations/{id}', [Controller::class, 'updateLocation'])
     ->name('api_location_update_location')
     ->middleware(['auth:api']);
