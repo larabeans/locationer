@@ -2,11 +2,12 @@
 
 namespace App\Containers\Vendor\Locationer\Models;
 
-use App\Ship\Parents\Models\Model;
+use App\Containers\Vendor\Beaner\Parents\Models\Model;
 
 class Location extends Model
 {
     protected $fillable = [
+        
         "locatable_type",
         "locatable_id",
         "address_line_1",

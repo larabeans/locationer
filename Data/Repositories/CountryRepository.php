@@ -15,7 +15,8 @@ class CountryRepository extends Repository
      */
     protected $fieldSearchable = [
         'id' => '=',
-        // ...
+        'name'=> 'like',
+        //'states.name'=>'like'
     ];
 
 }

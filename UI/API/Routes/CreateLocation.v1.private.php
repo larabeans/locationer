@@ -8,7 +8,7 @@
  * @apiDescription     Creates Location/Address for any locatable entity
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticated User
+ * @apiPermission      Authenticated User, manage-locations, create-location
  *
  * @apiParam           {String}  locatable_type Type of locatable entity e.g. user
  * @apiParam           {String}  locatable_id UUID of locatable entity

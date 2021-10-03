@@ -13,7 +13,8 @@ class CreateCountryAction extends Action
 {
     public function run(CreateCountryRequest $request)
     {
-        $country = app(CreateCountryTask::class)->run([
+        
+        $country = app(CreateCountryTask::class)->run(
             0,
             $request->name,
             $request->alpha2,
@@ -26,7 +27,7 @@ class CreateCountryAction extends Action
             $request->subcontinent,
             $request->emoji,
             $request->emojiUnicode
-        ]);
+        );
 
         return $country;
     }

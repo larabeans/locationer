@@ -8,11 +8,15 @@
  * @apiDescription     Deletes existing country record
  *
  * @apiVersion         1.0.0
- * @apiPermission      none
+ * @apiPermission      Authorized User, manage-countries, delete-country
  *
- * @apiParam           {String}  id Country Id
+ * @apiParam           {Integer}  id Country Id
  *
- * @apiUse             CountrySuccessSingleResponse
+ *  @apiSuccessExample  {json}       Success-Response:
+ * HTTP/1.1 202 OK
+ * {
+ * "message": "Record Deleted Successfully."
+ * }
  */
 
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CountryController;

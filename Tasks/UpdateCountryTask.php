@@ -23,7 +23,7 @@ class UpdateCountryTask extends Task
             return $this->repository->update($data, $id);
         }
         catch (Exception $exception) {
-            throw new UpdateResourceFailedException();
+            throw new UpdateResourceFailedException($exception);
         }
     }
 }

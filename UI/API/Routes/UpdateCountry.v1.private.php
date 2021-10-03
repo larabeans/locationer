@@ -5,16 +5,16 @@
  * @apiName            updateCountry
  *
  * @api                {PUT} /v1/countries/:id Update Country
- * @apiDescription     Endpoint description here..
+ * @apiDescription     Update country
  *
  * @apiVersion         1.0.0
- * @apiPermission      none
+ * @apiPermission      Authorized User, manage-countries, update-country
  *
- * @apiParam           {String}  id
+ * @apiParam           {Integer}  id
  * @apiParam           {String}  name
  * @apiParam           {String}  native
- * @apiParam           {String}  alpha2
- * @apiParam           {String}  alpha3
+ * @apiParam           {String}  alpha2 string size must be 2 characters
+ * @apiParam           {String}  alpha3 string size must be 3 characters
  * @apiParam           {String}  isd
  * @apiParam           {String}  capital
  * @apiParam           {String}  currency

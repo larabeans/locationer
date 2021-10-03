@@ -31,7 +31,7 @@ class CreateLocationTask extends Task
         string $longitude = null
     ) : Location
     {
-
+        
         $data = [
             'locatable_type' => $locatableType,
             'locatable_id'    => $locatableId,
@@ -49,7 +49,7 @@ class CreateLocationTask extends Task
             return $this->repository->create($data);
         }
         catch (Exception $exception) {
-            throw new CreateResourceFailedException();
+            throw new CreateResourceFailedException($exception);
         }
     }
 }

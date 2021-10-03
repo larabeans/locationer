@@ -15,7 +15,7 @@ class DeleteStateRequest extends Request
      * @var  array
      */
     protected $access = [
-        'permissions' => '',
+        'permissions' => 'manage-states|delete-state',
         'roles'       => '',
     ];
 

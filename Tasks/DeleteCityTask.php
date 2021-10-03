@@ -23,7 +23,7 @@ class DeleteCityTask extends Task
             return $this->repository->delete($id);
         }
         catch (Exception $exception) {
-            throw new DeleteResourceFailedException();
+            throw new DeleteResourceFailedException($exception);
         }
     }
 }

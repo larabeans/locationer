@@ -39,6 +39,9 @@ class LocationTransformer extends Transformer
             'longitude' => $entity->longitude,
             'created_at' => $entity->created_at,
             'updated_at' => $entity->updated_at,
+             'country_id' =>$entity->country->id,
+             'state_id' =>$entity->state->id,
+             'city_id' =>$entity->city->id
         ];
 
         $response = $this->ifAdmin([

@@ -8,10 +8,10 @@
  * @apiDescription     Adds city to existing state and country
  *
  * @apiVersion         1.0.0
- * @apiPermission      Authenticate User
+ * @apiPermission      Authenticate User, manage-cities, create-city
  *
- * @apiParam           {String}  country_id
- * @apiParam           {String}  state_id
+ * @apiParam           {Integer}  country_id
+ * @apiParam           {Integer}  state_id
  * @apiParam           {String}  name
  * @apiParam           {String}  latitude
  * @apiParam           {String}  longitude

@@ -16,7 +16,7 @@ class GetAllLocationsRequest extends Request
      * @var  array
      */
     protected $access = [
-        'permissions' => '',
+        'permissions' => 'manage-locations|list-locations',
         'roles'       => '',
     ];
 

@@ -4,6 +4,7 @@ namespace App\Containers\Vendor\Locationer\Models;
 
 use App\Ship\Parents\Models\Model;
 
+
 class City extends Model
 {
     protected $fillable = [

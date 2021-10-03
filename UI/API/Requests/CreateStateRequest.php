@@ -16,7 +16,7 @@ class CreateStateRequest extends Request
      * @var  array
      */
     protected $access = [
-        'permissions' => '',
+        'permissions' => 'manage-states|create-state',
         'roles'       => '',
     ];
 
@@ -45,8 +45,7 @@ class CreateStateRequest extends Request
     public function rules()
     {
         return [
-            // 'id' => 'required',
-            // '{user-input}' => 'required|max:255',
+            'name' => 'unique:states,name',
         ];
     }
 

@@ -12,7 +12,16 @@ class UpdateLocationAction extends Action
     public function run(UpdateLocationRequest $request)
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            "locatable_type",
+            "locatable_id",
+            "address_line_1",		
+            "address_line_2",		
+            "country_id",
+            "state_id",
+            "city_id",
+            "post_code",	
+            "latitude",
+            "longitude"
         ]);
 
         $location = app(UpdateLocationTask::class)->run($request->id, $data);

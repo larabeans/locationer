@@ -16,7 +16,7 @@ class CreateCityRequest extends Request
      * @var  array
      */
     protected $access = [
-        'permissions' => '',
+        'permissions' => 'manage-cities|create-city',
         'roles'       => '',
     ];
 
@@ -45,8 +45,7 @@ class CreateCityRequest extends Request
     public function rules()
     {
         return [
-            // 'id' => 'required',
-            // '{user-input}' => 'required|max:255',
+         'name' => 'unique:cities,name',
         ];
     }
 

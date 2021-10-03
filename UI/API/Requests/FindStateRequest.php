@@ -15,7 +15,7 @@ class FindStateRequest extends Request
      * @var  array
      */
     protected $access = [
-        'permissions' => '',
+        'permissions' => 'manage-states|view-state',
         'roles'       => '',
     ];
 

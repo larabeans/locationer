@@ -18,7 +18,8 @@ class CityTransformer extends Transformer
      * @var  array
      */
     protected $availableIncludes = [
-
+        'country',
+        'states'
     ];
 
     /**
@@ -34,6 +35,10 @@ class CityTransformer extends Transformer
             'name' => $entity->name,
             'latitude' => $entity->latitude,
             'longitude' => $entity->longitude,
+            'country_id'=>$entity->country->id,
+            'country_name'=>$entity->country->name,
+            'state_id'=>$entity->state->id,
+            'state_name'=>$entity->state->name,
             'created_at' => $entity->created_at,
             'updated_at' => $entity->updated_at,
 
@@ -45,5 +50,14 @@ class CityTransformer extends Transformer
         ], $response);
 
         return $response;
+    }
+    public function includeCountry(City $city)
+    {
+      return $this->item($city->country, new CountryTransformer());
+    }
+
+    public function includeStates(City $city)
+    {
+      return $this->item($city->state, new StateTransformer());
     }
 }

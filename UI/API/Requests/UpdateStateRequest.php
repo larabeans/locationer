@@ -15,7 +15,7 @@ class UpdateStateRequest extends Request
      * @var  array
      */
     protected $access = [
-        'permissions' => '',
+        'permissions' => 'manage-states|update-state',
         'roles'       => '',
     ];
 

@@ -37,12 +37,13 @@ class CreateCountryTask extends Task
         try {
             $data = [
               "name"         =>    $name,
+              "native"       =>    $native,
               "alpha2"       =>    $alpha2,
               "alpha3"       =>    $alpha3,
               "isd"          =>    $isd,
               "capital"      =>    $capital,
               "currency"     =>    $currency,
-              "native"       =>    $native,
+              
               "continent"    =>    $continent,
               "subcontinent" =>    $subcontinent,
               "emoji"        =>    $emoji,
@@ -56,7 +57,7 @@ class CreateCountryTask extends Task
             return $this->repository->create($data);
         }
         catch (Exception $exception) {
-            throw new CreateResourceFailedException();
+            throw new CreateResourceFailedException($exception);
         }
     }
 }

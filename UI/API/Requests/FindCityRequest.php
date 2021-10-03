@@ -15,7 +15,7 @@ class FindCityRequest extends Request
      * @var  array
      */
     protected $access = [
-        'permissions' => '',
+        'permissions' => 'manage-cities|view-city',
         'roles'       => '',
     ];
 
@@ -25,7 +25,7 @@ class FindCityRequest extends Request
      * @var  array
      */
     protected $decode = [
-        // 'id',
+         'id',
     ];
 
     /**
@@ -35,7 +35,7 @@ class FindCityRequest extends Request
      * @var  array
      */
     protected $urlParameters = [
-        // 'id',
+         'id',
     ];
 
     /**
