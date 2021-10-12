@@ -31,9 +31,9 @@ class StateController extends ApiController
      */
     public function getAllStates(GetAllStatesRequest $request)
     {
-      $states = app(GetAllStatesAction::class)->run($request);
+        $states = app(GetAllStatesAction::class)->run($request);
 
-      return $this->transform($states, StateTransformer::class);
+        return $this->transform($states, StateTransformer::class);
     }
 
     /**
@@ -44,9 +44,9 @@ class StateController extends ApiController
      */
     public function findState(FindStateRequest $request)
     {
-      $state = app(FindStateAction::class)->run($request);
+        $state = app(FindStateAction::class)->run($request);
 
-      return $this->transform($state, StateTransformer::class);
+        return $this->transform($state, StateTransformer::class);
     }
 
     /**
@@ -57,9 +57,9 @@ class StateController extends ApiController
      */
     public function createState(CreateStateRequest $request)
     {
-      $state = app(CreateStateAction::class)->run($request);
+        $state = app(CreateStateAction::class)->run($request);
 
-      return $this->transform($state, StateTransformer::class);
+        return $this->transform($state, StateTransformer::class);
     }
 
     /**
@@ -70,9 +70,9 @@ class StateController extends ApiController
      */
     public function updateState(UpdateStateRequest $request)
     {
-      $state = app(UpdateStateAction::class)->run($request);
+        $state = app(UpdateStateAction::class)->run($request);
 
-      return $this->transform($state, StateTransformer::class);
+        return $this->transform($state, StateTransformer::class);
     }
 
     /**
@@ -83,9 +83,9 @@ class StateController extends ApiController
      */
     public function deleteState(DeleteStateRequest $request)
     {
-      app(DeleteStateAction::class)->run($request);
+        app(DeleteStateAction::class)->run($request);
 
-      return $this->noContent();
+        return $this->noContent();
     }
 
 }

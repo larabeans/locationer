@@ -16,7 +16,7 @@ class UpdateCountryRequest extends Request
      */
     protected $access = [
         'permissions' => 'manage-countries|update-country',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**

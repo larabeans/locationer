@@ -15,10 +15,10 @@ class StateRepository extends Repository
      */
     protected $fieldSearchable = [
         'id' => '=',
-        'country_id'=>'=',
-        'name'=>'like',
-        'code'=>'like',
-        'country.name'=>'like'
+        'country_id' => '=',
+        'name' => 'like',
+        'code' => 'like',
+        'country.name' => 'like'
     ];
 
 }

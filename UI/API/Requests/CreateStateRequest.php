@@ -17,7 +17,7 @@ class CreateStateRequest extends Request
      */
     protected $access = [
         'permissions' => 'manage-states|create-state',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**

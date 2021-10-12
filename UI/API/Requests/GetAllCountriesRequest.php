@@ -16,7 +16,7 @@ class GetAllCountriesRequest extends Request
      */
     protected $access = [
         'permissions' => 'manage-countries|view-country',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**

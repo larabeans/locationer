@@ -17,7 +17,7 @@ class GetAllStatesRequest extends Request
      */
     protected $access = [
         'permissions' => 'manage-states|view-state',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**

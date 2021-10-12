@@ -8,7 +8,6 @@ use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 
 
-
 class CreateStateAction extends Action
 {
     public function run(CreateStateRequest $request)

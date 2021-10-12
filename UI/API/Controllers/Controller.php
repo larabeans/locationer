@@ -33,26 +33,27 @@ class Controller extends ApiController
      */
     public function getAllLocations(GetAllLocationsRequest $request)
     {
-      $locations = app(GetAllLocationsAction::class)->run($request);
+        $locations = app(GetAllLocationsAction::class)->run($request);
 
-      return $this->transform($locations, LocationTransformer::class);
+        return $this->transform($locations, LocationTransformer::class);
     }
-      /**
+
+    /**
      * @param GetLocationByLocatableTypeRequest $request
      * @return array
      */
     public function getLocationByLocatableType(GetLocationByLocatableTypeRequest $request)
     {
-      $locations = app(GetLocationByLocatableTypeAction::class)->run($request);
+        $locations = app(GetLocationByLocatableTypeAction::class)->run($request);
 
-      return $this->transform($locations, LocationTransformer::class);
+        return $this->transform($locations, LocationTransformer::class);
     }
 
     public function getAllLocatableTypes(GetAllLocatableTypesRequest $request)
     {
-      $locations = app(GetAllLocateTypesAction::class)->run($request);
+        $locations = app(GetAllLocateTypesAction::class)->run($request);
 
-      return $locations; //$this->transform($locations, LocationTransformer::class);
+        return $locations; //$this->transform($locations, LocationTransformer::class);
     }
 
     /**
@@ -72,9 +73,9 @@ class Controller extends ApiController
      */
     public function createLocation(CreateLocationRequest $request)
     {
-      $location = app(CreateLocationAction::class)->run($request);
+        $location = app(CreateLocationAction::class)->run($request);
 
-      return $this->transform($location, LocationTransformer::class);
+        return $this->transform($location, LocationTransformer::class);
     }
 
     /**

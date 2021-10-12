@@ -35,29 +35,30 @@ class CityTransformer extends Transformer
             'name' => $entity->name,
             'latitude' => $entity->latitude,
             'longitude' => $entity->longitude,
-            'country_id'=>$entity->country->id,
-            'country_name'=>$entity->country->name,
-            'state_id'=>$entity->state->id,
-            'state_name'=>$entity->state->name,
+            'country_id' => $entity->country->id,
+            'country_name' => $entity->country->name,
+            'state_id' => $entity->state->id,
+            'state_name' => $entity->state->name,
             'created_at' => $entity->created_at,
             'updated_at' => $entity->updated_at,
 
         ];
 
         $response = $this->ifAdmin([
-            'real_id'    => $entity->id,
+            'real_id' => $entity->id,
             // 'deleted_at' => $entity->deleted_at,
         ], $response);
 
         return $response;
     }
+
     public function includeCountry(City $city)
     {
-      return $this->item($city->country, new CountryTransformer());
+        return $this->item($city->country, new CountryTransformer());
     }
 
     public function includeStates(City $city)
     {
-      return $this->item($city->state, new StateTransformer());
+        return $this->item($city->state, new StateTransformer());
     }
 }

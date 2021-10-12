@@ -16,7 +16,7 @@ class UpdateLocationRequest extends Request
      */
     protected $access = [
         'permissions' => 'manage-locations|update-location',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**

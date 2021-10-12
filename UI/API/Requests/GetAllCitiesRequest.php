@@ -16,7 +16,7 @@ class GetAllCitiesRequest extends Request
      */
     protected $access = [
         'permissions' => 'manage-cities|view-city',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**

@@ -21,8 +21,7 @@ class DeleteStateTask extends Task
     {
         try {
             return $this->repository->delete($id);
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             throw new DeleteResourceFailedException();
         }
     }

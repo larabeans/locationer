@@ -17,7 +17,7 @@
  * {
  * "message": "Record Deleted Successfully."
  * }
- * 
+ *
  */
 
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CityController;

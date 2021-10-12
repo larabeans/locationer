@@ -24,8 +24,7 @@ class FindCityTask extends Task
             $query = is_numeric($cityNameOrId) ? ['id' => $cityNameOrId] : (Str::isUuid($cityNameOrId) ? ['id' => $cityNameOrId] : ['name' => $cityNameOrId]);
 
             return $this->repository->findWhere($query)->first();
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             throw new NotFoundException();
         }
     }

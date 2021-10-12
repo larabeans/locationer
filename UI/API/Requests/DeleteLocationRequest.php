@@ -16,7 +16,7 @@ class DeleteLocationRequest extends Request
      */
     protected $access = [
         'permissions' => 'manage-locations|delete-location',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**

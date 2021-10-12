@@ -8,7 +8,6 @@ use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 
 
-
 class CreateCityAction extends Action
 {
     public function run(CreateCityRequest $request)

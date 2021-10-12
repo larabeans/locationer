@@ -14,12 +14,12 @@ class UpdateLocationAction extends Action
         $data = $request->sanitizeInput([
             "locatable_type",
             "locatable_id",
-            "address_line_1",		
-            "address_line_2",		
+            "address_line_1",
+            "address_line_2",
             "country_id",
             "state_id",
             "city_id",
-            "post_code",	
+            "post_code",
             "latitude",
             "longitude"
         ]);

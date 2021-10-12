@@ -24,8 +24,7 @@ class FindCountryTask extends Task
             $query = is_numeric($countryNameOrId) ? ['id' => $countryNameOrId] : (Str::isUuid($countryNameOrId) ? ['id' => $countryNameOrId] : ['name' => $countryNameOrId]);
 
             return $this->repository->findWhere($query)->first();
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             throw new NotFoundException();
         }
     }

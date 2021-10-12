@@ -18,12 +18,11 @@ class FindLocationTask extends Task
         $this->repository = $repository;
     }
 
-    public function run($id) : Location
+    public function run($id): Location
     {
         try {
             return $this->repository->find($id);
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             throw new NotFoundException();
         }
     }

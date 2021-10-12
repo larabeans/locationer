@@ -15,8 +15,8 @@ class CityRepository extends Repository
      */
     protected $fieldSearchable = [
         'id' => '=',
-        'name'=>'like',
-        
+        'name' => 'like',
+
     ];
 
 }

@@ -7,7 +7,7 @@ use App\Containers\Vendor\Beaner\Parents\Models\Model;
 class Location extends Model
 {
     protected $fillable = [
-        
+
         "locatable_type",
         "locatable_id",
         "address_line_1",
@@ -48,7 +48,8 @@ class Location extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function locatable(){
+    public function locatable()
+    {
         return $this->morphTo();
     }
 
@@ -56,7 +57,8 @@ class Location extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function country(){
+    public function country()
+    {
         return $this->belongsTo('App\Containers\Vendor\Locationer\Models\Country', 'country_id');
     }
 
@@ -64,7 +66,8 @@ class Location extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function state(){
+    public function state()
+    {
         return $this->belongsTo('App\Containers\Vendor\Locationer\Models\State', 'state_id');
     }
 
@@ -72,7 +75,8 @@ class Location extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function city(){
-      return $this->belongsTo('App\Containers\Vendor\Locationer\Models\City', 'city_id');
+    public function city()
+    {
+        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\City', 'city_id');
     }
 }

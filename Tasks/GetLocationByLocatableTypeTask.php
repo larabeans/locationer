@@ -21,20 +21,19 @@ class GetLocationByLocatableTypeTask extends Task
     {
         try {
             $locationType = config('locationer.locatable_types');
-            $index="";
-          
-           foreach($locationType as $key => $value){
-               if($key == $type){
-                   $index =$value['class_path'];
-               }
-              
-           } 
-           if($index ==null){
-               throw new NotFoundException();
-           }
-            return $this->repository->where('locatable_type',$index)->paginate(10);
-        }
-        catch (Exception $exception) {
+            $index = "";
+
+            foreach ($locationType as $key => $value) {
+                if ($key == $type) {
+                    $index = $value['class_path'];
+                }
+
+            }
+            if ($index == null) {
+                throw new NotFoundException();
+            }
+            return $this->repository->where('locatable_type', $index)->paginate(10);
+        } catch (Exception $exception) {
             throw new NotFoundException($exception);
         }
     }

@@ -19,8 +19,8 @@ class StateTransformer extends Transformer
      * @var  array
      */
     protected $availableIncludes = [
-      'cities',
-      'country'
+        'cities',
+        'country'
     ];
 
     /**
@@ -42,7 +42,7 @@ class StateTransformer extends Transformer
         ];
 
         $response = $this->ifAdmin([
-            'real_id'    => $entity->id,
+            'real_id' => $entity->id,
             // 'deleted_at' => $entity->deleted_at,
         ], $response);
 
@@ -51,6 +51,6 @@ class StateTransformer extends Transformer
 
     public function includeCities(State $state)
     {
-      return $this->collection($state->cities, new CityTransformer());
+        return $this->collection($state->cities, new CityTransformer());
     }
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Containers\Vendor\Locationer\Data\Seeders;
 
 
@@ -33,7 +34,7 @@ class CountryStateCitySeeder extends Seeder
 
 
         foreach ($countries as $country) {
-            $country = (object) $country;
+            $country = (object)$country;
             app(CreateCountryTask::class)->run(
                 $country->id ? $country->id : 0,
                 $country->name ? $country->name : '',
@@ -51,7 +52,7 @@ class CountryStateCitySeeder extends Seeder
         }
 
         foreach ($states as $state) {
-            $state = (object) $state;
+            $state = (object)$state;
             app(CreateStateTask::class)->run(
                 $state->id ? $state->id : 0,
                 $state->country_id ? $state->country_id : '',
@@ -61,7 +62,7 @@ class CountryStateCitySeeder extends Seeder
         }
 
         foreach ($cities as $city) {
-            $city = (object) $city;
+            $city = (object)$city;
             app(CreateCityTask::class)->run(
                 $city->id ? $city->id : 0,
                 $city->country_id ? $city->country_id : '',

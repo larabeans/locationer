@@ -31,9 +31,9 @@ class CityController extends ApiController
      */
     public function getAllCities(GetAllCitiesRequest $request)
     {
-      $cities = app(GetAllCitiesAction::class)->run($request);
+        $cities = app(GetAllCitiesAction::class)->run($request);
 
-      return $this->transform($cities, CityTransformer::class);
+        return $this->transform($cities, CityTransformer::class);
     }
 
     /**
@@ -44,9 +44,9 @@ class CityController extends ApiController
      */
     public function findCity(FindCityRequest $request)
     {
-      $city = app(FindCityAction::class)->run($request);
+        $city = app(FindCityAction::class)->run($request);
 
-      return $this->transform($city, CityTransformer::class);
+        return $this->transform($city, CityTransformer::class);
     }
 
     /**
@@ -57,9 +57,9 @@ class CityController extends ApiController
      */
     public function createCity(CreateCityRequest $request)
     {
-      $city = app(CreateCityAction::class)->run($request);
+        $city = app(CreateCityAction::class)->run($request);
 
-      return $this->transform($city, CityTransformer::class);
+        return $this->transform($city, CityTransformer::class);
     }
 
     /**
@@ -70,9 +70,9 @@ class CityController extends ApiController
      */
     public function updateCity(UpdateCityRequest $request)
     {
-      $city = app(UpdateCityAction::class)->run($request);
+        $city = app(UpdateCityAction::class)->run($request);
 
-      return $this->transform($city, CityTransformer::class);
+        return $this->transform($city, CityTransformer::class);
     }
 
     /**
@@ -83,9 +83,9 @@ class CityController extends ApiController
      */
     public function deleteCity(DeleteCityRequest $request)
     {
-      $city = app(DeleteCityAction::class)->run($request);
+        $city = app(DeleteCityAction::class)->run($request);
 
-      return $this->noContent(); //$this->transform($city, CityTransformer::class);
+        return $this->noContent(); //$this->transform($city, CityTransformer::class);
     }
 
 }

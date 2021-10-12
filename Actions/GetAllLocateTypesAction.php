@@ -9,7 +9,7 @@ use App\Ship\Parents\Requests\Request;
 
 class GetAllLocateTypesAction extends Action
 {
-    public function run(Request $request):array
+    public function run(Request $request): array
     {
         return app(GetAllLocateTypesTask::class)->run();
     }

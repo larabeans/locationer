@@ -39,15 +39,17 @@ class MobileLocation extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function locatable(){
-      return $this->morphTo();
+    public function locatable()
+    {
+        return $this->morphTo();
     }
 
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function country(){
-      return $this->belongsTo('App\Containers\Vendor\Locationer\Models\Country', 'country_id');
+    public function country()
+    {
+        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\Country', 'country_id');
     }
 }

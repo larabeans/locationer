@@ -21,8 +21,7 @@ class UpdateCityTask extends Task
     {
         try {
             return $this->repository->update($data, $id);
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             throw new UpdateResourceFailedException($exception);
         }
     }

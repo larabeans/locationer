@@ -16,7 +16,7 @@ class DeleteCountryRequest extends Request
      */
     protected $access = [
         'permissions' => 'manage-countries|delete-country',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**

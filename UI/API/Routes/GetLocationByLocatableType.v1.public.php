@@ -5,14 +5,14 @@
  * @apiName            getLocationByLocatableType
  *
  * @api                {GET} /v1/type/locations Get Location By Locateable Type
- * @apiDescription     Return all the Locatable Type Records 
+ * @apiDescription     Return all the Locatable Type Records
  *
  * @apiVersion         1.0.0
  * @apiPermission      Authenticated User, manage-locations, view-locations
  *
  * @apiParam           {String}  type user,store
  *
- *@apiUse             GeneralSuccessMultipleResponse
+ * @apiUse             GeneralSuccessMultipleResponse
  */
 
 use App\Containers\Vendor\Locationer\UI\API\Controllers\Controller;

@@ -11,7 +11,7 @@ class GetAllLocatableTypesRequest extends Request
      */
     protected array $access = [
         'permissions' => 'manage-locations|list-locations',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**

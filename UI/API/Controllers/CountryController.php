@@ -31,9 +31,9 @@ class CountryController extends ApiController
      */
     public function getAllCountries(GetAllCountriesRequest $request)
     {
-      $countries = app(GetAllCountriesAction::class)->run($request);
+        $countries = app(GetAllCountriesAction::class)->run($request);
 
-      return $this->transform($countries, CountryTransformer::class);
+        return $this->transform($countries, CountryTransformer::class);
     }
 
     /**
@@ -44,9 +44,9 @@ class CountryController extends ApiController
      */
     public function findCountry(FindCountryRequest $request)
     {
-      $country = app(FindCountryAction::class)->run($request);
+        $country = app(FindCountryAction::class)->run($request);
 
-      return $this->transform($country, CountryTransformer::class);
+        return $this->transform($country, CountryTransformer::class);
     }
 
     /**
@@ -57,9 +57,9 @@ class CountryController extends ApiController
      */
     public function createCountry(CreateCountryRequest $request)
     {
-      $country = app(CreateCountryAction::class)->run($request);
+        $country = app(CreateCountryAction::class)->run($request);
 
-      return $this->transform($country, CountryTransformer::class);
+        return $this->transform($country, CountryTransformer::class);
     }
 
     /**
@@ -70,9 +70,9 @@ class CountryController extends ApiController
      */
     public function updateCountry(UpdateCountryRequest $request)
     {
-      $country = app(UpdateCountryAction::class)->run($request);
+        $country = app(UpdateCountryAction::class)->run($request);
 
-      return $this->transform($country, CountryTransformer::class);
+        return $this->transform($country, CountryTransformer::class);
     }
 
     /**
@@ -83,9 +83,9 @@ class CountryController extends ApiController
      */
     public function deleteCountry(DeleteCountryRequest $request)
     {
-      app(DeleteCountryAction::class)->run($request);
+        app(DeleteCountryAction::class)->run($request);
 
-      return $this->noContent();
+        return $this->noContent();
     }
 
 }

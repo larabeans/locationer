@@ -41,11 +41,13 @@ class City extends Model
 
     protected $keyType = "int";
 
-    public function country() {
+    public function country()
+    {
         return $this->belongsTo('App\Containers\Vendor\Locationer\Models\Country', 'country_id', 'id');
     }
 
-    public function state() {
+    public function state()
+    {
         return $this->belongsTo('App\Containers\Vendor\Locationer\Models\State', 'state_id', 'id');
     }
 }

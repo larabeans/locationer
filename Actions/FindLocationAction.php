@@ -10,7 +10,7 @@ use App\Ship\Parents\Actions\Action;
 
 class FindLocationAction extends Action
 {
-    public function run(FindLocationRequest $request) : Location
+    public function run(FindLocationRequest $request): Location
     {
         $location = app(FindLocationTask::class)->run($request->id);
 

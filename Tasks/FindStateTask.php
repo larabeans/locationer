@@ -24,8 +24,7 @@ class FindStateTask extends Task
             $query = is_numeric($stateNameOrId) ? ['id' => $stateNameOrId] : (Str::isUuid($stateNameOrId) ? ['id' => $stateNameOrId] : ['name' => $stateNameOrId]);
 
             return $this->repository->findWhere($query)->first();
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             throw new NotFoundException();
         }
     }

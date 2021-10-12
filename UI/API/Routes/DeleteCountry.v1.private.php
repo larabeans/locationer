@@ -12,7 +12,7 @@
  *
  * @apiParam           {Integer}  id Country Id
  *
- *  @apiSuccessExample  {json}       Success-Response:
+ * @apiSuccessExample  {json}       Success-Response:
  * HTTP/1.1 202 OK
  * {
  * "message": "Record Deleted Successfully."

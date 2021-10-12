@@ -29,26 +29,25 @@ class CreateLocationTask extends Task
         string $postCode = null,
         string $latitude = null,
         string $longitude = null
-    ) : Location
+    ): Location
     {
-        
+
         $data = [
             'locatable_type' => $locatableType,
-            'locatable_id'    => $locatableId,
+            'locatable_id' => $locatableId,
             'address_line_1' => $addressLine1,
             'address_line_2' => $addressLine2,
-            'city_id'        => $city,
-            'state_id'       => $stateId,
-            'country_id'     => $countryId,
-            'post_code'      => $postCode,
-            'latitude'       => $latitude,
-            'longitude'      => $longitude
+            'city_id' => $city,
+            'state_id' => $stateId,
+            'country_id' => $countryId,
+            'post_code' => $postCode,
+            'latitude' => $latitude,
+            'longitude' => $longitude
         ];
 
         try {
             return $this->repository->create($data);
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             throw new CreateResourceFailedException($exception);
         }
     }

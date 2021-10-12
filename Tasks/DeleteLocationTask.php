@@ -20,15 +20,14 @@ class DeleteLocationTask extends Task
     public function run($id)
     {
         try {
-            
+
             $var = json_decode($id);
-            if(is_array($var)) {
+            if (is_array($var)) {
                 return $this->repository->whereIn('id', $var)->delete();
             } else {
                 return $this->repository->delete($id);
             }
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             throw new DeleteResourceFailedException();
         }
     }

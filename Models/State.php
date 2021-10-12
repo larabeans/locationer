@@ -38,11 +38,13 @@ class State extends Model
 
     protected $keyType = "int";
 
-    public function country() {
+    public function country()
+    {
         return $this->belongsTo('App\Containers\Vendor\Locationer\Models\Country', 'country_id', 'id');
     }
 
-    public function cities() {
+    public function cities()
+    {
         return $this->hasMany('App\Containers\Vendor\Locationer\Models\City', 'state_id', 'id');
     }
 }

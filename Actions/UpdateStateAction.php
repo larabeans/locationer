@@ -14,8 +14,8 @@ class UpdateStateAction extends Action
     {
         $data = $request->sanitizeInput([
             "country_id",
-	        "name",
-	        "code"
+            "name",
+            "code"
         ]);
 
         $state = app(UpdateStateTask::class)->run($request->id, $data);

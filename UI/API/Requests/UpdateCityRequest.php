@@ -16,7 +16,7 @@ class UpdateCityRequest extends Request
      */
     protected $access = [
         'permissions' => 'manage-cities|update-city',
-        'roles'       => '',
+        'roles' => '',
     ];
 
     /**
