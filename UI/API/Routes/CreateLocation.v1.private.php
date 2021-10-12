@@ -14,9 +14,9 @@
  * @apiParam           {String}  locatable_id UUID of locatable entity
  * @apiParam           {String}  address_line_1
  * @apiParam           {String}  address_line_2
- * @apiParam           {String}  country_id
- * @apiParam           {String}  state_id
- * @apiParam           {String}  city_id
+ * @apiParam           {Integer}  country_id
+ * @apiParam           {Integer}  state_id
+ * @apiParam           {Integer}  city_id
  * @apiParam           {String}  post_code
  * @apiParam           {String}  latitude
  * @apiParam           {String}  longitude
