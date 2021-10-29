@@ -5,8 +5,10 @@ namespace App\Containers\Vendor\Locationer\Tasks;
 use App\Containers\Vendor\Locationer\Data\Repositories\LocationRepository;
 use App\Containers\Vendor\Locationer\Models\Location;
 use App\Ship\Exceptions\CreateResourceFailedException;
+use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Parents\Tasks\Task;
 use Exception;
+use phpDocumentor\Reflection\Types\String_;
 
 class CreateLocationTask extends Task
 {
@@ -28,12 +30,25 @@ class CreateLocationTask extends Task
         int $countryId = null,
         string $postCode = null,
         string $latitude = null,
-        string $longitude = null
+        string $longitude = null,
+        string $tenant_id = null
     ): Location
     {
 
+        $configData = config('locationer.locatable_types');
+        $type=null;
+        foreach ($configData as $key=>$value) {
+            if($key==$locatableType)
+            {
+                $type =$value['class_path'];
+            }
+        }
+        if($type== null)
+        {
+            throw new NotFoundException("Locatable_type not found");
+        }
         $data = [
-            'locatable_type' => $locatableType,
+            'locatable_type' => $type,
             'locatable_id' => $locatableId,
             'address_line_1' => $addressLine1,
             'address_line_2' => $addressLine2,
@@ -42,7 +57,8 @@ class CreateLocationTask extends Task
             'country_id' => $countryId,
             'post_code' => $postCode,
             'latitude' => $latitude,
-            'longitude' => $longitude
+            'longitude' => $longitude,
+            'tenant_id' => $tenant_id
         ];
 
         try {
