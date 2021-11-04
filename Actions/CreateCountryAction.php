@@ -25,7 +25,7 @@ class CreateCountryAction extends Action
             $request->continent,
             $request->subcontinent,
             $request->emoji,
-            $request->emojiUnicode
+            $request->emoji_unicode
         );
 
         return $country;
