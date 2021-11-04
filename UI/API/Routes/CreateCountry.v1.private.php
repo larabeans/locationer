@@ -20,7 +20,7 @@
  * @apiParam           {String}  continent
  * @apiParam           {String}  subcontinent
  * @apiParam           {String}  emoji
- * @apiParam           {String}  emojiUnicode
+ * @apiParam           {String}  emoji_unicode
  *
  * @apiUse             CountrySuccessSingleResponse
  */
