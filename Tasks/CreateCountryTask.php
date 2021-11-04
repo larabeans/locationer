@@ -31,7 +31,7 @@ class CreateCountryTask extends Task
         string $continent,
         string $subcontinent,
         string $emoji,
-        string $emojiUnicode
+        string $emoji_unicode
     )
     {
         try {
@@ -47,7 +47,7 @@ class CreateCountryTask extends Task
                 "continent" => $continent,
                 "subcontinent" => $subcontinent,
                 "emoji" => $emoji,
-                "emoji_unicode" => $emojiUnicode
+                "emoji_unicode" => $emoji_unicode
             ];
 
             if ($id) {
