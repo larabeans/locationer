@@ -3,9 +3,7 @@
 namespace App\Containers\Vendor\Locationer\Tasks;
 
 use App\Containers\Vendor\Locationer\Data\Repositories\CountryRepository;
-use App\Ship\Exceptions\CreateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
-use Exception;
 
 class CreateCountryTask extends Task
 {
@@ -51,6 +49,7 @@ class CreateCountryTask extends Task
 
             return $this->repository->create($data);
         } catch (Exception $exception) {
+
             throw new CreateResourceFailedException($exception);
         }
     }
