@@ -6,7 +6,6 @@ use App\Containers\Vendor\Locationer\Models\Location;
 
 trait HasLocation
 {
-
     /**
      * Get the entity's location.
      *
@@ -16,5 +15,4 @@ trait HasLocation
     {
         return $this->morphOne(Location::class, 'locatable')->orderBy('created_at', 'desc');
     }
-
 }

@@ -7,7 +7,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteStateRequest;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 
-
 class DeleteStateAction extends Action
 {
     public function run(DeleteStateRequest $request)

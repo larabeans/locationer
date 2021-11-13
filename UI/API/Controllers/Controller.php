@@ -19,7 +19,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllLocatableTypesRequest
 use App\Containers\Vendor\Locationer\UI\API\Transformers\LocationTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
-
 /**
  * Class Controller
  *
@@ -99,5 +98,4 @@ class Controller extends ApiController
 
         return $this->noContent();
     }
-
 }

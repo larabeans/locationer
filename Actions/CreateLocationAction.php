@@ -8,7 +8,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\CreateLocationRequest;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 
-
 class CreateLocationAction extends Action
 {
     public function run(CreateLocationRequest $data): Location
@@ -23,7 +22,8 @@ class CreateLocationAction extends Action
             $data->country_id,
             $data->post_code,
             $data->latitude,
-            $data->longitude
+            $data->longitude,
+            $data->tenant_id
         );
 
         return $location;

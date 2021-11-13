@@ -10,7 +10,6 @@ use Exception;
 
 class FindLocationTask extends Task
 {
-
     protected $repository;
 
     public function __construct(LocationRepository $repository)

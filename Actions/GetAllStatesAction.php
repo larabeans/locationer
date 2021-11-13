@@ -6,7 +6,6 @@ use App\Containers\Vendor\Locationer\Tasks\GetAllStatesTask;
 use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllStatesRequest;
 use App\Ship\Parents\Actions\Action;
 
-
 class GetAllStatesAction extends Action
 {
     public function run(GetAllStatesRequest $request)

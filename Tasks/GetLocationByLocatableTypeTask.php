@@ -27,7 +27,6 @@ class GetLocationByLocatableTypeTask extends Task
                 if ($key == $type) {
                     $index = $value['class_path'];
                 }
-
             }
             if ($index == null) {
                 throw new NotFoundException();

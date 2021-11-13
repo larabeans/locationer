@@ -7,7 +7,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\FindStateRequest;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 
-
 class FindStateAction extends Action
 {
     public function run(FindStateRequest $request)

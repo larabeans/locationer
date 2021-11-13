@@ -17,7 +17,8 @@ class Location extends Model
         "country_id",
         "post_code",
         "latitude",
-        "longitude"
+        "longitude",
+        "tenant_id"
     ];
 
     protected $attributes = [

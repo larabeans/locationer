@@ -22,7 +22,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\StateController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::delete('states/{id}', [StateController::class, 'deleteState'])
     ->name('api_location_delete_state')
     ->middleware(['auth:api']);

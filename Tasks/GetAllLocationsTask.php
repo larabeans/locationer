@@ -7,7 +7,6 @@ use App\Ship\Parents\Tasks\Task;
 
 class GetAllLocationsTask extends Task
 {
-
     protected $repository;
 
     public function __construct(LocationRepository $repository)

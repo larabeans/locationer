@@ -9,7 +9,6 @@ use App\Ship\Parents\Repositories\Repository;
  */
 class MobileLocationRepository extends Repository
 {
-
     /**
      * @var array
      */
@@ -17,5 +16,4 @@ class MobileLocationRepository extends Repository
         'id' => '=',
         // ...
     ];
-
 }

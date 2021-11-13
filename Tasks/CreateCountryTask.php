@@ -6,9 +6,6 @@ use App\Containers\Vendor\Locationer\Data\Repositories\CountryRepository;
 use App\Ship\Exceptions\CreateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
 use Exception;
-use phpDocumentor\Reflection\Types\Integer;
-use phpDocumentor\Reflection\Types\Object_;
-
 
 class CreateCountryTask extends Task
 {
@@ -32,21 +29,19 @@ class CreateCountryTask extends Task
         string $subcontinent,
         string $emoji,
         string $emojiUnicode
-    )
-    {
+    ) {
         try {
             $data = [
-                "name" => $name,
-                "native" => $native,
-                "alpha2" => $alpha2,
-                "alpha3" => $alpha3,
-                "isd" => $isd,
-                "capital" => $capital,
-                "currency" => $currency,
-
-                "continent" => $continent,
-                "subcontinent" => $subcontinent,
-                "emoji" => $emoji,
+                "name"          => $name,
+                "native"        => $native,
+                "alpha2"        => $alpha2,
+                "alpha3"        => $alpha3,
+                "isd"           => $isd,
+                "capital"       => $capital,
+                "currency"      => $currency,
+                "continent"     => $continent,
+                "subcontinent"  => $subcontinent,
+                "emoji"         => $emoji,
                 "emoji_unicode" => $emojiUnicode
             ];
 

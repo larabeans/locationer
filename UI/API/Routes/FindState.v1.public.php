@@ -18,7 +18,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\StateController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('states/{id}', [StateController::class, 'findState'])
     ->name('api_location_find_state')
     ->middleware(['auth:api']);

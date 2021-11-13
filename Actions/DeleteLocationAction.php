@@ -6,7 +6,6 @@ use App\Containers\Vendor\Locationer\Tasks\DeleteLocationTask;
 use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteLocationRequest;
 use App\Ship\Parents\Actions\Action;
 
-
 class DeleteLocationAction extends Action
 {
     public function run(DeleteLocationRequest $request)

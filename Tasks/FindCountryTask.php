@@ -10,7 +10,6 @@ use Illuminate\Support\Str;
 
 class FindCountryTask extends Task
 {
-
     protected $repository;
 
     public function __construct(CountryRepository $repository)

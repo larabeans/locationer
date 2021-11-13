@@ -9,7 +9,6 @@ use Exception;
 
 class DeleteStateTask extends Task
 {
-
     protected $repository;
 
     public function __construct(StateRepository $repository)

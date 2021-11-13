@@ -7,7 +7,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\CreateCityRequest;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 
-
 class CreateCityAction extends Action
 {
     public function run(CreateCityRequest $request)

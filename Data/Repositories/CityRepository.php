@@ -9,7 +9,6 @@ use App\Ship\Parents\Repositories\Repository;
  */
 class CityRepository extends Repository
 {
-
     /**
      * @var array
      */
@@ -18,5 +17,4 @@ class CityRepository extends Repository
         'name' => 'like',
 
     ];
-
 }

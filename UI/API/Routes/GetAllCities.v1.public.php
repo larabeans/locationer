@@ -24,7 +24,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CityController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('cities', [CityController::class, 'getAllCities'])
     ->name('api_location_get_all_cities')
     ->middleware(['auth:api']);

@@ -21,14 +21,13 @@
  * @apiParam           {String}  continent
  * @apiParam           {String}  subcontinent
  * @apiParam           {String}  emoji
- * @apiParam           {String}  emojiUnicode
+ * @apiParam           {String}  emoji_unicode
  *
  * @apiUse             CountrySuccessSingleResponse
  */
 
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CountryController;
 use Illuminate\Support\Facades\Route;
-
 
 Route::put('countries/{id}', [CountryController::class, 'updateCountry'])
     ->name('api_location_update_country')

@@ -20,14 +20,13 @@
  * @apiParam           {String}  continent
  * @apiParam           {String}  subcontinent
  * @apiParam           {String}  emoji
- * @apiParam           {String}  emojiUnicode
+ * @apiParam           {String}  emoji_unicode
  *
  * @apiUse             CountrySuccessSingleResponse
  */
 
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CountryController;
 use Illuminate\Support\Facades\Route;
-
 
 Route::post('countries', [CountryController::class, 'createCountry'])
     ->name('api_location_create_country')

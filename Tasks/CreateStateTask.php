@@ -19,8 +19,7 @@ class CreateStateTask extends Task
         int $countryId,
         string $name,
         string $code
-    )
-    {
+    ) {
         try {
             $data = [
                 "country_id" => $countryId,

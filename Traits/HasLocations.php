@@ -6,7 +6,6 @@ use Apiato\Core\Traits\MultiTenantableScope;
 
 trait HasLocations
 {
-
     /**
      * Get the entity's locations.
      *
@@ -16,5 +15,4 @@ trait HasLocations
     {
         return $this->morphMany(config('locationer.models.location'), 'locatable')->orderBy('created_at', 'desc');
     }
-
 }

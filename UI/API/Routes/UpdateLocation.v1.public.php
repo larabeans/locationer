@@ -26,7 +26,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
-
 Route::put('locations/{id}', [Controller::class, 'updateLocation'])
     ->name('api_location_update_location')
     ->middleware(['auth:api']);

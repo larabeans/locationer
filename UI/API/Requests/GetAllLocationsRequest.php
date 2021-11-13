@@ -9,7 +9,6 @@ use App\Ship\Parents\Requests\Request;
  */
 class GetAllLocationsRequest extends Request
 {
-
     /**
      * Define which Roles and/or Permissions has access to this request.
      *

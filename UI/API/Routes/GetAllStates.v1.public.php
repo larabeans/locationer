@@ -24,7 +24,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\StateController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('states', [StateController::class, 'getAllStates'])
     ->name('api_location_get_all_states')
     ->middleware(['auth:api']);
