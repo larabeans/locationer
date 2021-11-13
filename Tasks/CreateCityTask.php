@@ -4,7 +4,6 @@ namespace App\Containers\Vendor\Locationer\Tasks;
 
 use App\Containers\Vendor\Locationer\Data\Repositories\CityRepository;
 use App\Ship\Parents\Tasks\Task;
-use phpDocumentor\Reflection\Types\String_;
 
 class CreateCityTask extends Task
 {
