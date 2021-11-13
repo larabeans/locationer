@@ -9,7 +9,6 @@ use App\Ship\Parents\Repositories\Repository;
  */
 class CountryRepository extends Repository
 {
-
     /**
      * @var array
      */
@@ -18,5 +17,4 @@ class CountryRepository extends Repository
         'name' => 'like',
         //'states.name'=>'like'
     ];
-
 }

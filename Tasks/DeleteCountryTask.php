@@ -9,7 +9,6 @@ use Exception;
 
 class DeleteCountryTask extends Task
 {
-
     protected $repository;
 
     public function __construct(CountryRepository $repository)

@@ -5,20 +5,24 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreateLocationTables extends Migration
 {
-
     /**
      * Run the migrations.
      */
     public function up()
     {
         Schema::create('locations', function (Blueprint $table) {
-
-            if (config('uuider.installed', false)) $table->uuid('id')->primary('id');
-            else $table->increments('id')->primary('id');
+            if (config('uuider.installed', false)) {
+                $table->uuid('id')->primary('id');
+            } else {
+                $table->increments('id')->primary('id');
+            }
 
             if (config('tenanter.installed', false)) {
-                if (config('uuider.installed', false)) $table->uuid('tenant_id')->index('tenant_id_index');
-                else $table->increments('tenant_id')->primary('tenant_id_index');
+                if (config('uuider.installed', false)) {
+                    $table->uuid('tenant_id')->index('tenant_id_index');
+                } else {
+                    $table->increments('tenant_id')->primary('tenant_id_index');
+                }
             }
 
             $table->uuidMorphs('locatable');
@@ -35,13 +39,18 @@ class CreateLocationTables extends Migration
         });
 
         Schema::create('mobile_locations', function (Blueprint $table) {
-
-            if (config('uuider.installed', false)) $table->uuid('id')->primary('id');
-            else $table->increments('id')->primary('id');
+            if (config('uuider.installed', false)) {
+                $table->uuid('id')->primary('id');
+            } else {
+                $table->increments('id')->primary('id');
+            }
 
             if (config('tenanter.installed', false)) {
-                if (config('uuider.installed', false)) $table->uuid('tenant_id')->index('tenant_id_index');
-                else $table->increments('tenant_id')->primary('tenant_id_index');
+                if (config('uuider.installed', false)) {
+                    $table->uuid('tenant_id')->index('tenant_id_index');
+                } else {
+                    $table->increments('tenant_id')->primary('tenant_id_index');
+                }
             }
 
             $table->uuidMorphs('locatable');

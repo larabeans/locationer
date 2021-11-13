@@ -28,7 +28,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CountryController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::post('countries', [CountryController::class, 'createCountry'])
     ->name('api_location_create_country')
     ->middleware(['auth:api']);

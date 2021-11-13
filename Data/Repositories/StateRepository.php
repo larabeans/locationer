@@ -9,7 +9,6 @@ use App\Ship\Parents\Repositories\Repository;
  */
 class StateRepository extends Repository
 {
-
     /**
      * @var array
      */
@@ -20,5 +19,4 @@ class StateRepository extends Repository
         'code' => 'like',
         'country.name' => 'like'
     ];
-
 }

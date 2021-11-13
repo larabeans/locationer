@@ -18,7 +18,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CityController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('cities/{id}', [CityController::class, 'findCity'])
     ->name('api_location_find_city')
     ->middleware(['auth:api']);

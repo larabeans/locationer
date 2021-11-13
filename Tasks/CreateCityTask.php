@@ -22,20 +22,20 @@ class CreateCityTask extends Task
         string $name,
         string $latitude,
         string $longitude
-    )
-    {
+    ) {
         try {
             $data = [
-                "country_id" => $countryId,
-                "state_id" => $stateId,
-                "name" => $name,
-                "latitude" => $latitude,
-                "longitude" => $longitude
+                "country_id"    => $countryId,
+                "state_id"      => $stateId,
+                "name"          => $name,
+                "latitude"      => $latitude,
+                "longitude"     => $longitude
             ];
 
             if ($id) {
                 $data["id"] = $id;
             }
+
             return $this->repository->create($data);
         } catch (Exception $exception) {
             throw new CreateResourceFailedException($exception);

@@ -9,7 +9,6 @@ use Exception;
 
 class DeleteLocationTask extends Task
 {
-
     protected $repository;
 
     public function __construct(LocationRepository $repository)
@@ -20,7 +19,6 @@ class DeleteLocationTask extends Task
     public function run($id)
     {
         try {
-
             $var = json_decode($id);
             if (is_array($var)) {
                 return $this->repository->whereIn('id', $var)->delete();

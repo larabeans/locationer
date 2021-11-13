@@ -15,7 +15,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateCityRequest;
 use App\Containers\Vendor\Locationer\UI\API\Transformers\CityTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
-
 /**
  * Class Controller
  *
@@ -87,5 +86,4 @@ class CityController extends ApiController
 
         return $this->noContent(); //$this->transform($city, CityTransformer::class);
     }
-
 }

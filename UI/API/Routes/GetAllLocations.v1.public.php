@@ -24,7 +24,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('locations', [Controller::class, 'getAllLocations'])
     ->name('api_location_get_all_locations')
     ->middleware(['auth:api']);

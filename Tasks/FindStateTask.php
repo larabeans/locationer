@@ -10,7 +10,6 @@ use Illuminate\Support\Str;
 
 class FindStateTask extends Task
 {
-
     protected $repository;
 
     public function __construct(StateRepository $repository)

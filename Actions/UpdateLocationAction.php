@@ -6,7 +6,6 @@ use App\Containers\Vendor\Locationer\Tasks\UpdateLocationTask;
 use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateLocationRequest;
 use App\Ship\Parents\Actions\Action;
 
-
 class UpdateLocationAction extends Action
 {
     public function run(UpdateLocationRequest $request)

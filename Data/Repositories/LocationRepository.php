@@ -9,7 +9,6 @@ use App\Ship\Parents\Repositories\Repository;
  */
 class LocationRepository extends Repository
 {
-
     /**
      * @var array
      */
@@ -19,5 +18,4 @@ class LocationRepository extends Repository
         'states' => '=',
         'locatable_type' => "like"
     ];
-
 }

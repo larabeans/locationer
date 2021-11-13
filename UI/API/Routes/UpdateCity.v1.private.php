@@ -23,7 +23,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CityController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::put('cities/{id}', [CityController::class, 'updateCity'])
     ->name('api_location_update_city')
     ->middleware(['auth:api']);

@@ -24,7 +24,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CountryController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('countries', [CountryController::class, 'getAllCountries'])
     ->name('api_location_get_all_countries')
     ->middleware(['auth:api']);

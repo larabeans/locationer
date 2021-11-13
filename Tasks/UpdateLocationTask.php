@@ -9,7 +9,6 @@ use Exception;
 
 class UpdateLocationTask extends Task
 {
-
     protected $repository;
 
     public function __construct(LocationRepository $repository)

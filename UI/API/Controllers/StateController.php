@@ -15,7 +15,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateStateRequest;
 use App\Containers\Vendor\Locationer\UI\API\Transformers\StateTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
-
 /**
  * Class Controller
  *
@@ -87,5 +86,4 @@ class StateController extends ApiController
 
         return $this->noContent();
     }
-
 }

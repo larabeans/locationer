@@ -7,7 +7,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\CreateStateRequest;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 
-
 class CreateStateAction extends Action
 {
     public function run(CreateStateRequest $request)

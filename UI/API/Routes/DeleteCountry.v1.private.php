@@ -22,7 +22,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CountryController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::delete('countries/{id}', [CountryController::class, 'deleteCountry'])
     ->name('api_location_delete_country')
     ->middleware(['auth:api']);

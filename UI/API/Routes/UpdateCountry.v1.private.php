@@ -29,7 +29,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\CountryController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::put('countries/{id}', [CountryController::class, 'updateCountry'])
     ->name('api_location_update_country')
     ->middleware(['auth:api']);

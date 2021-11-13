@@ -8,7 +8,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\CreateLocationRequest;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 
-
 class CreateLocationAction extends Action
 {
     public function run(CreateLocationRequest $data): Location

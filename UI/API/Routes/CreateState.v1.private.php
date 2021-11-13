@@ -20,7 +20,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\StateController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::post('states', [StateController::class, 'createState'])
     ->name('api_location_create_state')
     ->middleware(['auth:api']);

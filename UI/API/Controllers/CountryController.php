@@ -15,7 +15,6 @@ use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateCountryRequest;
 use App\Containers\Vendor\Locationer\UI\API\Transformers\CountryTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
-
 /**
  * Class Controller
  *
@@ -87,5 +86,4 @@ class CountryController extends ApiController
 
         return $this->noContent();
     }
-
 }

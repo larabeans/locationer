@@ -2,7 +2,6 @@
 
 namespace App\Containers\Vendor\Locationer\Data\Seeders;
 
-
 use App\Containers\Vendor\Locationer\Tasks\CreateCityTask;
 use App\Containers\Vendor\Locationer\Tasks\CreateCountryTask;
 use App\Containers\Vendor\Locationer\Tasks\CreateStateTask;

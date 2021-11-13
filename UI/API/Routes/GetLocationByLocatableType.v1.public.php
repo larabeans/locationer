@@ -21,4 +21,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('type/locations', [Controller::class, 'getLocationByLocatableType'])
     ->name('api_locationer_get_location_by_locatable_type')
     ->middleware(['auth:api']);
-

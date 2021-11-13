@@ -9,7 +9,6 @@ use Exception;
 
 class GetCountryStatesTask extends Task
 {
-
     protected $repository;
 
     public function __construct(StateRepository $repository)

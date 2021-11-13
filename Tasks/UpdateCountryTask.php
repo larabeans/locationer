@@ -9,7 +9,6 @@ use Exception;
 
 class UpdateCountryTask extends Task
 {
-
     protected $repository;
 
     public function __construct(CountryRepository $repository)
