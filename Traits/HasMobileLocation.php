@@ -2,10 +2,9 @@
 
 namespace App\Containers\Vendor\Locationer\Traits;
 
-use App\Containers\Vendor\Locationer\Models\Location;
-
 trait HasMobileLocation
 {
+
     /**
      * Get the entity's locations.
      *
@@ -13,6 +12,11 @@ trait HasMobileLocation
      */
     public function location()
     {
-        return $this->morphOne(Location::class, 'locatable')->orderBy('created_at', 'desc');
+        if (config('locationer.installed', false) && config('locationer.enabled', false)) {
+            return $this->morphOne('locationer.models.mobile-location', 'locatable')->orderBy('created_at', 'desc');
+        }
+
+        return 'Location container is not installed';
     }
+
 }
