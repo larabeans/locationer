@@ -33,7 +33,7 @@ class Locationer
     }
     public static function getEntities($after = null)
     {
-        return config('configurationer.entities', []);
+        return config('locationer.entities', []);
     }
 
     public static function getEntityKeys()
