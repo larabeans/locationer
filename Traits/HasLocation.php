@@ -2,21 +2,17 @@
 
 namespace App\Containers\Vendor\Locationer\Traits;
 
+use App\Containers\Vendor\Locationer\Models\Location;
+
 trait HasLocation
 {
-
     /**
-     * Get the entity's locationer.
+     * Get the entity's location.
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphOne
      */
     public function location()
     {
-        if (config('locationer.installed', false) && config('locationer.enabled', false)) {
-            return $this->morphOne(config('locationer.models.location'), 'locatable')->orderBy('created_at', 'desc');
-        }
-
-        return 'Location container is not installed';
+        return $this->morphOne(Location::class, 'locatable')->orderBy('created_at', 'desc');
     }
-
 }

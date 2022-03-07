@@ -44,8 +44,10 @@ class CreateLocationRequest extends Request
     public function rules()
     {
         return [
-            // 'id' => 'required',
-            // '{user-input}' => 'required|max:255',
+            'locatable_type' => 'required',
+            'locatable_id' => 'required',
+            'address_line_1' => 'required',
+            'address_line_2' => 'required',
         ];
     }
 

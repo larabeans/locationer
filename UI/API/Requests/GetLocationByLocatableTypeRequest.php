@@ -26,7 +26,7 @@ class GetLocationByLocatableTypeRequest extends Request
      * validation rules on them and allows accessing them like request data.
      */
     protected array $urlParameters = [
-        // 'type',
+        'id',
     ];
 
     /**
@@ -35,7 +35,8 @@ class GetLocationByLocatableTypeRequest extends Request
     public function rules(): array
     {
         return [
-            // 'type' => 'required'
+            'id' => 'required',
+            'type' => 'required'
         ];
     }
 

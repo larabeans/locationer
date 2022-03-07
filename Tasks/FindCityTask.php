@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 use App\Containers\Vendor\Locationer\Data\Repositories\CityRepository;
 use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Parents\Tasks\Task;
-use Exception;
+use App\Ship\Parents\Exceptions\Exception;
 
 class FindCityTask extends Task
 {
