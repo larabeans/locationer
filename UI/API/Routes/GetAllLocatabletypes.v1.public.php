@@ -4,7 +4,7 @@
  * @apiGroup           Location
  * @apiName            getAllLocatableTypes
  *
- * @api                {GET} /v1/locatable/location GetAllLocatableTypes
+ * @api                {GET} /v1/locatable/types GetAllLocatableTypes
  * @apiDescription     This endpoint return all the locatable type exist.
  *
  * @apiVersion         1.0.0
@@ -28,6 +28,6 @@
 use App\Containers\Vendor\Locationer\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
-Route::get('locatable/location', [Controller::class, 'getAllLocatableTypes'])
+Route::get('locatable/types', [Controller::class, 'getAllLocatableTypes'])
     ->name('api_locationer_get_all_locatable_types')
     ->middleware(['auth:api']);

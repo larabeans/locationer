@@ -5,7 +5,7 @@ namespace App\Containers\Vendor\Locationer\Tasks;
 use App\Containers\Vendor\Locationer\Data\Repositories\CountryRepository;
 use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Parents\Tasks\Task;
-use Exception;
+use App\Ship\Parents\Exceptions\Exception;
 use Illuminate\Support\Str;
 
 class FindCountryTask extends Task

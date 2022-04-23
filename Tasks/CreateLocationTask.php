@@ -28,21 +28,9 @@ class CreateLocationTask extends Task
         string $longitude     = null,
         string $tenantId      = null
     ): Location {
-        $locatableTypes = config('locationer.locatable_types');
-        $locatableType = null;
-
-        foreach ($locatableTypes as $key => $value) {
-            if ($key == $locatableTypeIdentifier) {
-                $locatableType = $value['class_path'];
-            }
-        }
-
-        if ($locatableType== null) {
-            throw new NotFoundException("Locatable_type not found");
-        }
 
         $data = [
-            'locatable_type' => $locatableType,
+            'locatable_type' => $locatableTypeIdentifier,
             'locatable_id'   => $locatableId,
             'city_id'        => $cityId,
             'state_id'       => $stateId,

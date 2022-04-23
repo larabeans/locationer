@@ -4,14 +4,14 @@ namespace App\Containers\Vendor\Locationer\UI\API\Requests;
 
 use App\Ship\Parents\Requests\Request;
 
-class GetLocationByLocatableTypeRequest extends Request
+class CreateLanguageRequest extends Request
 {
     /**
      * Define which Roles and/or Permissions has access to this request.
      */
     protected array $access = [
-        'permissions' => 'manage-locations|list-locations',
-        'roles' => '',
+        'permissions' => '',
+        'roles'       => 'admin',
     ];
 
     /**
@@ -26,7 +26,7 @@ class GetLocationByLocatableTypeRequest extends Request
      * validation rules on them and allows accessing them like request data.
      */
     protected array $urlParameters = [
-        'id',
+        // 'id',
     ];
 
     /**
@@ -35,8 +35,8 @@ class GetLocationByLocatableTypeRequest extends Request
     public function rules(): array
     {
         return [
-            'id' => 'required',
-            'type' => 'required'
+            'name' => 'required|unique:languages,name',
+            'code' => 'required'
         ];
     }
 

@@ -2,16 +2,16 @@
 
 namespace App\Containers\Vendor\Locationer\Tasks;
 
-use App\Containers\Vendor\Locationer\Data\Repositories\CityRepository;
+use App\Containers\Vendor\Locationer\Data\Repositories\LanguageRepository;
 use App\Ship\Exceptions\UpdateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
-use App\Ship\Parents\Exceptions\Exception;
+use Exception;
 
-class UpdateCityTask extends Task
+class UpdateLanguageTask extends Task
 {
-    protected $repository;
+    protected LanguageRepository $repository;
 
-    public function __construct(CityRepository $repository)
+    public function __construct(LanguageRepository $repository)
     {
         $this->repository = $repository;
     }
@@ -20,8 +20,9 @@ class UpdateCityTask extends Task
     {
         try {
             return $this->repository->update($data, $id);
-        } catch (Exception $exception) {
-            throw new UpdateResourceFailedException($exception);
+        }
+        catch (Exception $exception) {
+            throw new UpdateResourceFailedException();
         }
     }
 }

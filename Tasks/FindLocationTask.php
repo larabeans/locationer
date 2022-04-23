@@ -6,7 +6,7 @@ use App\Containers\Vendor\Locationer\Data\Repositories\LocationRepository;
 use App\Containers\Vendor\Locationer\Models\Location;
 use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Parents\Tasks\Task;
-use Exception;
+use App\Ship\Parents\Exceptions\Exception;
 
 class FindLocationTask extends Task
 {

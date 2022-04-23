@@ -2,25 +2,26 @@
 
 namespace App\Containers\Vendor\Locationer\Tasks;
 
-use App\Containers\Vendor\Locationer\Data\Repositories\StateRepository;
+use App\Containers\Vendor\Locationer\Data\Repositories\LanguageRepository;
 use App\Ship\Exceptions\DeleteResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
-use App\Ship\Parents\Exceptions\Exception;
+use Exception;
 
-class DeleteStateTask extends Task
+class DeleteLanguageTask extends Task
 {
-    protected $repository;
+    protected LanguageRepository $repository;
 
-    public function __construct(StateRepository $repository)
+    public function __construct(LanguageRepository $repository)
     {
         $this->repository = $repository;
     }
 
-    public function run($id)
+    public function run($id): ?int
     {
         try {
             return $this->repository->delete($id);
-        } catch (Exception $exception) {
+        }
+        catch (Exception $exception) {
             throw new DeleteResourceFailedException();
         }
     }

@@ -5,7 +5,7 @@ namespace App\Containers\Vendor\Locationer\Tasks;
 use App\Containers\Vendor\Locationer\Data\Repositories\LocationRepository;
 use App\Ship\Exceptions\DeleteResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
-use Exception;
+use App\Ship\Parents\Exceptions\Exception;
 
 class DeleteLocationTask extends Task
 {

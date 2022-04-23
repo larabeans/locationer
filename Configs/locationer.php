@@ -27,11 +27,12 @@ return [
         'mobile_location' => \App\Containers\Vendor\Locationer\Models\MobileLocation::class,
     ],
 
-    'locatable_types' => [
-        'user' => [
-            'identifier' => 'user',
-            'display_name' => 'User',
-            'class_path' => 'App\Containers\AppSection\User\Models\User'
+    'entities' => [
+        'dummy' => [
+            'identifier' => 'dummy',
+            'key' => 'dummy',
+            'name' => 'Dummy',
+            'model' => \App\Containers\Vendor\Dummy\Models\Dummy::class,
         ],
     ]
 ];

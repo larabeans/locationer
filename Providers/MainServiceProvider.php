@@ -2,6 +2,7 @@
 
 namespace App\Containers\Vendor\Locationer\Providers;
 
+use App\Containers\Vendor\Locationer\Locationer;
 use App\Ship\Parents\Providers\MainProvider;
 
 /**
@@ -17,7 +18,7 @@ class MainServiceProvider extends MainProvider
      * @var array
      */
     public $serviceProviders = [
-        // InternalServiceProviderExample::class,
+        LocationerServiceProvider::class
     ];
 
     /**
@@ -35,7 +36,6 @@ class MainServiceProvider extends MainProvider
     public function register(): void
     {
         parent::register();
-
         // $this->app->bind(UserRepositoryInterface::class, UserRepository::class);
         // ...
     }

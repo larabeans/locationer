@@ -4,14 +4,14 @@ namespace App\Containers\Vendor\Locationer\UI\API\Requests;
 
 use App\Ship\Parents\Requests\Request;
 
-class GetLocationByLocatableTypeRequest extends Request
+class UpdateLanguageRequest extends Request
 {
     /**
      * Define which Roles and/or Permissions has access to this request.
      */
     protected array $access = [
-        'permissions' => 'manage-locations|list-locations',
-        'roles' => '',
+        'permissions' => '',
+        'roles'       => 'Admin',
     ];
 
     /**
@@ -36,7 +36,8 @@ class GetLocationByLocatableTypeRequest extends Request
     {
         return [
             'id' => 'required',
-            'type' => 'required'
+            'name' => 'required|unique:languages,name',
+            'code' => 'required'
         ];
     }
 
