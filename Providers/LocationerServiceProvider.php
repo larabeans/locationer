@@ -3,9 +3,9 @@
 namespace App\Containers\Vendor\Locationer\Providers;
 
 use App\Containers\Vendor\Locationer\Locationer;
-use App\Ship\Parents\Providers\MainProvider;
+use App\Ship\Parents\Providers\MainServiceProvider as ParentMainServiceProvider;
 
-class LocationerServiceProvider extends MainProvider
+class LocationerServiceProvider extends ParentMainServiceProvider
 {
     public function register(): void
     {
