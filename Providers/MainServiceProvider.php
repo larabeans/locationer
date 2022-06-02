@@ -3,14 +3,14 @@
 namespace App\Containers\Vendor\Locationer\Providers;
 
 use App\Containers\Vendor\Locationer\Locationer;
-use App\Ship\Parents\Providers\MainProvider;
+use App\Ship\Parents\Providers\MainServiceProvider as ParentMainServiceProvider;
 
 /**
  * Class MainServiceProvider.
  *
  * The Main Service Provider of this container, it will be automatically registered in the framework.
  */
-class MainServiceProvider extends MainProvider
+class MainServiceProvider extends ParentMainServiceProvider
 {
     /**
      * Container Service Providers.

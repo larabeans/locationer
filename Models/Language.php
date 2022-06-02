@@ -35,8 +35,4 @@ class Language extends Model
      */
     protected string $resourceKey = 'Language';
 
-    public function user()
-    {
-        return $this->belongsToMany(User::class);
-    }
 }
