@@ -3,7 +3,7 @@
 namespace App\Containers\Larabeans\Locationer\Models;
 
 //use App\Ship\Parents\Models\Model;
-use App\Containers\Larabeans\Beaner\Parents\Models\Model;
+use App\Containers\Larabeans\Core\Parents\Models\Model;
 
 class MobileLocation extends Model
 {
