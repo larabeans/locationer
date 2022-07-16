@@ -1,24 +1,24 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\UI\API\Controllers;
+namespace App\Containers\Larabeans\Locationer\UI\API\Controllers;
 
-use App\Containers\Vendor\Locationer\Actions\CreateCountryAction;
-use App\Containers\Vendor\Locationer\Actions\DeleteCountryAction;
-use App\Containers\Vendor\Locationer\Actions\FindCountryAction;
-use App\Containers\Vendor\Locationer\Actions\GetAllCountriesAction;
-use App\Containers\Vendor\Locationer\Actions\UpdateCountryAction;
-use App\Containers\Vendor\Locationer\UI\API\Requests\CreateCountryRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteCountryRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\FindCountryRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllCountriesRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateCountryRequest;
-use App\Containers\Vendor\Locationer\UI\API\Transformers\CountryTransformer;
+use App\Containers\Larabeans\Locationer\Actions\CreateCountryAction;
+use App\Containers\Larabeans\Locationer\Actions\DeleteCountryAction;
+use App\Containers\Larabeans\Locationer\Actions\FindCountryAction;
+use App\Containers\Larabeans\Locationer\Actions\GetAllCountriesAction;
+use App\Containers\Larabeans\Locationer\Actions\UpdateCountryAction;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\CreateCountryRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\DeleteCountryRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\FindCountryRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\GetAllCountriesRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\UpdateCountryRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Transformers\CountryTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
 /**
  * Class Controller
  *
- * @package App\Containers\Vendor\Locationer\UI\API\Controllers
+ * @package App\Containers\Larabeans\Locationer\UI\API\Controllers
  */
 class CountryController extends ApiController
 {

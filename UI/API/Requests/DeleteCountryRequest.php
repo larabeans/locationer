@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\UI\API\Requests;
+namespace App\Containers\Larabeans\Locationer\UI\API\Requests;
 
 use App\Ship\Parents\Requests\Request;
 

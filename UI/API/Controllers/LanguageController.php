@@ -1,26 +1,26 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\UI\API\Controllers;
+namespace App\Containers\Larabeans\Locationer\UI\API\Controllers;
 
-use App\Containers\Vendor\Locationer\Actions\CreateLanguageAction;
-use App\Containers\Vendor\Locationer\Actions\DeleteLanguageAction;
-use App\Containers\Vendor\Locationer\Actions\GetAllLanguagesAction;
-use App\Containers\Vendor\Locationer\Actions\UpdateLanguageAction;
-use App\Containers\Vendor\Locationer\UI\API\Requests\CreateLanguageRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteLanguageRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteLocationerRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllLanguagesRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllLocationersRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\FindLocationerByIdRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateLanguageRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateLocationerRequest;
-use App\Containers\Vendor\Locationer\UI\API\Transformers\LanguageTransformer;
-use App\Containers\Vendor\Locationer\UI\API\Transformers\LocationerTransformer;
-use App\Containers\Vendor\Locationer\Actions\CreateLocationerAction;
-use App\Containers\Vendor\Locationer\Actions\FindLocationerByIdAction;
-use App\Containers\Vendor\Locationer\Actions\GetAllLocationersAction;
-use App\Containers\Vendor\Locationer\Actions\UpdateLocationerAction;
-use App\Containers\Vendor\Locationer\Actions\DeleteLocationerAction;
+use App\Containers\Larabeans\Locationer\Actions\CreateLanguageAction;
+use App\Containers\Larabeans\Locationer\Actions\DeleteLanguageAction;
+use App\Containers\Larabeans\Locationer\Actions\GetAllLanguagesAction;
+use App\Containers\Larabeans\Locationer\Actions\UpdateLanguageAction;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\CreateLanguageRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\DeleteLanguageRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\DeleteLocationerRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\GetAllLanguagesRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\GetAllLocationersRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\FindLocationerByIdRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\UpdateLanguageRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\UpdateLocationerRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Transformers\LanguageTransformer;
+use App\Containers\Larabeans\Locationer\UI\API\Transformers\LocationerTransformer;
+use App\Containers\Larabeans\Locationer\Actions\CreateLocationerAction;
+use App\Containers\Larabeans\Locationer\Actions\FindLocationerByIdAction;
+use App\Containers\Larabeans\Locationer\Actions\GetAllLocationersAction;
+use App\Containers\Larabeans\Locationer\Actions\UpdateLocationerAction;
+use App\Containers\Larabeans\Locationer\Actions\DeleteLocationerAction;
 use App\Ship\Parents\Controllers\ApiController;
 use Illuminate\Http\JsonResponse;
 

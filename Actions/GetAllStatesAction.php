@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Tasks\GetAllStatesTask;
-use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllStatesRequest;
+use App\Containers\Larabeans\Locationer\Tasks\GetAllStatesTask;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\GetAllStatesRequest;
 use App\Ship\Parents\Actions\Action;
 
 class GetAllStatesAction extends Action

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Models\Location;
-use App\Containers\Vendor\Locationer\Tasks\GetLocationByLocatableTypeTask;
+use App\Containers\Larabeans\Locationer\Models\Location;
+use App\Containers\Larabeans\Locationer\Tasks\GetLocationByLocatableTypeTask;
 use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;

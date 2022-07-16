@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Tasks;
+namespace App\Containers\Larabeans\Locationer\Tasks;
 
-use App\Containers\Vendor\Locationer\Data\Repositories\LocationRepository;
+use App\Containers\Larabeans\Locationer\Data\Repositories\LocationRepository;
 use App\Ship\Exceptions\DeleteResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
 use App\Ship\Parents\Exceptions\Exception;

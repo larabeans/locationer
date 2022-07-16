@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Tasks\DeleteLocationTask;
-use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteLocationRequest;
+use App\Containers\Larabeans\Locationer\Tasks\DeleteLocationTask;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\DeleteLocationRequest;
 use App\Ship\Parents\Actions\Action;
 
 class DeleteLocationAction extends Action

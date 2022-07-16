@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Models;
+namespace App\Containers\Larabeans\Locationer\Models;
 
 use App\Ship\Parents\Models\Model;
 
@@ -42,11 +42,11 @@ class City extends Model
 
     public function country()
     {
-        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\Country', 'country_id', 'id');
+        return $this->belongsTo('App\Containers\Larabeans\Locationer\Models\Country', 'country_id', 'id');
     }
 
     public function state()
     {
-        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\State', 'state_id', 'id');
+        return $this->belongsTo('App\Containers\Larabeans\Locationer\Models\State', 'state_id', 'id');
     }
 }

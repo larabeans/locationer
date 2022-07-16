@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Tasks;
+namespace App\Containers\Larabeans\Locationer\Tasks;
 
-use App\Containers\Vendor\Locationer\Data\Repositories\LocationRepository;
+use App\Containers\Larabeans\Locationer\Data\Repositories\LocationRepository;
 use App\Ship\Exceptions\NotFoundException;
 use App\Ship\Parents\Tasks\Task;
 use App\Ship\Parents\Exceptions\Exception;
-use App\Containers\Vendor\Locationer\Models\Location;
+use App\Containers\Larabeans\Locationer\Models\Location;
 
 class GetLocationByLocatableTypeTask extends Task
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Models;
+namespace App\Containers\Larabeans\Locationer\Models;
 
 //use App\Ship\Parents\Models\Model;
-use App\Containers\Vendor\Beaner\Parents\Models\Model;
+use App\Containers\Larabeans\Beaner\Parents\Models\Model;
 
 class MobileLocation extends Model
 {
@@ -50,6 +50,6 @@ class MobileLocation extends Model
      */
     public function country()
     {
-        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\Country', 'country_id');
+        return $this->belongsTo('App\Containers\Larabeans\Locationer\Models\Country', 'country_id');
     }
 }

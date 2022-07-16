@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Models\Language;
-use App\Containers\Vendor\Locationer\Tasks\UpdateLanguageTask;
-use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateLanguageRequest;
+use App\Containers\Larabeans\Locationer\Models\Language;
+use App\Containers\Larabeans\Locationer\Tasks\UpdateLanguageTask;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\UpdateLanguageRequest;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 

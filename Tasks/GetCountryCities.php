@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Tasks;
+namespace App\Containers\Larabeans\Locationer\Tasks;
 
 use App\Ship\Parents\Tasks\Task;
 

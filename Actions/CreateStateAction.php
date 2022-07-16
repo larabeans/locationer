@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Tasks\CreateStateTask;
-use App\Containers\Vendor\Locationer\UI\API\Requests\CreateStateRequest;
+use App\Containers\Larabeans\Locationer\Tasks\CreateStateTask;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\CreateStateRequest;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 

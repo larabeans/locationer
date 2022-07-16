@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Models;
+namespace App\Containers\Larabeans\Locationer\Models;
 
-use App\Containers\Vendor\Beaner\Parents\Models\Model;
+use App\Containers\Larabeans\Beaner\Parents\Models\Model;
 
 class Location extends Model
 {
@@ -60,7 +60,7 @@ class Location extends Model
      */
     public function country()
     {
-        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\Country', 'country_id');
+        return $this->belongsTo('App\Containers\Larabeans\Locationer\Models\Country', 'country_id');
     }
 
 
@@ -69,7 +69,7 @@ class Location extends Model
      */
     public function state()
     {
-        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\State', 'state_id');
+        return $this->belongsTo('App\Containers\Larabeans\Locationer\Models\State', 'state_id');
     }
 
 
@@ -78,6 +78,6 @@ class Location extends Model
      */
     public function city()
     {
-        return $this->belongsTo('App\Containers\Vendor\Locationer\Models\City', 'city_id');
+        return $this->belongsTo('App\Containers\Larabeans\Locationer\Models\City', 'city_id');
     }
 }

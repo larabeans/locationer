@@ -16,15 +16,15 @@ return [
 
     'models' => [
 
-        'city' => \App\Containers\Vendor\Locationer\Models\City::class,
+        'city' => \App\Containers\Larabeans\Locationer\Models\City::class,
 
-        'state' => \App\Containers\Vendor\Locationer\Models\State::class,
+        'state' => \App\Containers\Larabeans\Locationer\Models\State::class,
 
-        'country' => \App\Containers\Vendor\Locationer\Models\Country::class,
+        'country' => \App\Containers\Larabeans\Locationer\Models\Country::class,
 
-        'location' => \App\Containers\Vendor\Locationer\Models\Location::class,
+        'location' => \App\Containers\Larabeans\Locationer\Models\Location::class,
 
-        'mobile_location' => \App\Containers\Vendor\Locationer\Models\MobileLocation::class,
+        'mobile_location' => \App\Containers\Larabeans\Locationer\Models\MobileLocation::class,
     ],
 
     'entities' => [
@@ -32,7 +32,7 @@ return [
             'identifier' => 'dummy',
             'key' => 'dummy',
             'name' => 'Dummy',
-            'model' => \App\Containers\Vendor\Dummy\Models\Dummy::class,
+            'model' => \App\Containers\Larabeans\Dummy\Models\Dummy::class,
         ],
     ]
 ];

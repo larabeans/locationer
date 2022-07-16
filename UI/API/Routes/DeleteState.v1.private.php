@@ -19,7 +19,7 @@
  * }
  */
 
-use App\Containers\Vendor\Locationer\UI\API\Controllers\StateController;
+use App\Containers\Larabeans\Locationer\UI\API\Controllers\StateController;
 use Illuminate\Support\Facades\Route;
 
 Route::delete('states/{id}', [StateController::class, 'deleteState'])
