@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Tasks;
+namespace App\Containers\Larabeans\Locationer\Tasks;
 
-use App\Containers\Vendor\Locationer\Data\Repositories\LocationRepository;
-use App\Containers\Vendor\Locationer\Models\Location;
+use App\Containers\Larabeans\Locationer\Data\Repositories\LocationRepository;
+use App\Containers\Larabeans\Locationer\Models\Location;
 use App\Ship\Parents\Tasks\Task;
 
 class CreateLocationTask extends Task

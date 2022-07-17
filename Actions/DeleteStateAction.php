@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Tasks\DeleteStateTask;
-use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteStateRequest;
+use App\Containers\Larabeans\Locationer\Tasks\DeleteStateTask;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\DeleteStateRequest;
 use App\Ship\Parents\Actions\Action;
 use App\Ship\Parents\Requests\Request;
 

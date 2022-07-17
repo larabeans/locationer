@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Tasks;
+namespace App\Containers\Larabeans\Locationer\Tasks;
 
-use App\Containers\Vendor\Locationer\Data\Repositories\CountryRepository;
+use App\Containers\Larabeans\Locationer\Data\Repositories\CountryRepository;
 use App\Ship\Parents\Tasks\Task;
 
 class GetAllCountriesTask extends Task

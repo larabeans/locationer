@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Providers;
+namespace App\Containers\Larabeans\Locationer\Providers;
 
-use App\Containers\Vendor\Locationer\Locationer;
+use App\Containers\Larabeans\Locationer\Locationer;
 use App\Ship\Parents\Providers\MainServiceProvider as ParentMainServiceProvider;
 
 /**

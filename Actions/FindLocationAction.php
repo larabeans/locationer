@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Models\Location;
-use App\Containers\Vendor\Locationer\Tasks\FindLocationTask;
-use App\Containers\Vendor\Locationer\UI\API\Requests\FindLocationRequest;
+use App\Containers\Larabeans\Locationer\Models\Location;
+use App\Containers\Larabeans\Locationer\Tasks\FindLocationTask;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\FindLocationRequest;
 use App\Ship\Parents\Actions\Action;
 
 class FindLocationAction extends Action

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Tasks\UpdateCountryTask;
-use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateCountryRequest;
+use App\Containers\Larabeans\Locationer\Tasks\UpdateCountryTask;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\UpdateCountryRequest;
 use App\Ship\Parents\Actions\Action;
 
 class UpdateCountryAction extends Action

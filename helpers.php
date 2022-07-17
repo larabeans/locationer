@@ -1,6 +1,6 @@
 <?php
 
-use App\Containers\Vendor\Locationer\Locationer;
+use App\Containers\Larabeans\Locationer\Locationer;
 
 if (!function_exists('locationer')) {
     /** @return Locationer */

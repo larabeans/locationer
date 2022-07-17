@@ -1,7 +1,7 @@
 {
     "name": "larabeans/locationer",
     "description": "Apiato container to manage locations for all type of locate-able entities",
-    "type": "apiato-container",
+    "type": "larabeans-container",
     "homepage": "https://larabeans.com/",
     "version": "0.1.0",
     "support": {
@@ -34,6 +34,7 @@
     "extra": {
         "apiato": {
             "container": {
+                "section": "Larabeans",
                 "name": "Locationer"
             }
         }

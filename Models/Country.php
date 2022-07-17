@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Models;
+namespace App\Containers\Larabeans\Locationer\Models;
 
 use App\Ship\Parents\Models\Model;
 
@@ -48,11 +48,11 @@ class Country extends Model
 
     public function states()
     {
-        return $this->hasMany('App\Containers\Vendor\Locationer\Models\State', 'country_id', 'id');
+        return $this->hasMany('App\Containers\Larabeans\Locationer\Models\State', 'country_id', 'id');
     }
 
     public function cities()
     {
-        return $this->hasMany('App\Containers\Vendor\Locationer\Models\City', 'country_id', 'id');
+        return $this->hasMany('App\Containers\Larabeans\Locationer\Models\City', 'country_id', 'id');
     }
 }

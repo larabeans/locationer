@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Tasks\DeleteLanguageTask;
-use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteLanguageRequest;
+use App\Containers\Larabeans\Locationer\Tasks\DeleteLanguageTask;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\DeleteLanguageRequest;
 use App\Ship\Parents\Actions\Action;
 
 class DeleteLanguageAction extends Action

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Actions;
+namespace App\Containers\Larabeans\Locationer\Actions;
 
-use App\Containers\Vendor\Locationer\Tasks\UpdateStateTask;
-use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateStateRequest;
+use App\Containers\Larabeans\Locationer\Tasks\UpdateStateTask;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\UpdateStateRequest;
 use App\Ship\Parents\Actions\Action;
 
 class UpdateStateAction extends Action

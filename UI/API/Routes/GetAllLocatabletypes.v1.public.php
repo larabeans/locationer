@@ -25,7 +25,7 @@
  * }
  */
 
-use App\Containers\Vendor\Locationer\UI\API\Controllers\Controller;
+use App\Containers\Larabeans\Locationer\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::get('locatable/types', [Controller::class, 'getAllLocatableTypes'])

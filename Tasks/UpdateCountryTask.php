@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Tasks;
+namespace App\Containers\Larabeans\Locationer\Tasks;
 
-use App\Containers\Vendor\Locationer\Data\Repositories\CountryRepository;
+use App\Containers\Larabeans\Locationer\Data\Repositories\CountryRepository;
 use App\Ship\Exceptions\UpdateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
 use App\Ship\Parents\Exceptions\Exception;

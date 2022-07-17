@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer;
+namespace App\Containers\Larabeans\Locationer;
 
 use Illuminate\Support\Traits\Macroable;
 

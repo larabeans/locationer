@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Data\Seeders;
+namespace App\Containers\Larabeans\Locationer\Data\Seeders;
 
-use App\Containers\Vendor\Locationer\Tasks\CreateCityTask;
-use App\Containers\Vendor\Locationer\Tasks\CreateCountryTask;
-use App\Containers\Vendor\Locationer\Tasks\CreateStateTask;
+use App\Containers\Larabeans\Locationer\Tasks\CreateCityTask;
+use App\Containers\Larabeans\Locationer\Tasks\CreateCountryTask;
+use App\Containers\Larabeans\Locationer\Tasks\CreateStateTask;
 use App\Ship\Parents\Seeders\Seeder;
 
 class CountryStateCitySeeder extends Seeder
@@ -23,9 +23,9 @@ class CountryStateCitySeeder extends Seeder
          *                              |
          */
 
-        $countriesRaw = file_get_contents(app_path('Containers/Vendor/Locationer/Data/Source/countries.json'));
-        $statesRaw = file_get_contents(app_path('Containers/Vendor/Locationer/Data/Source/states.json'));
-        $citiesRaw = file_get_contents(app_path('Containers/Vendor/Locationer/Data/Source/cities.json'));
+        $countriesRaw = file_get_contents(app_path('Containers/Larabeans/Locationer/Data/Source/countries.json'));
+        $statesRaw = file_get_contents(app_path('Containers/Larabeans/Locationer/Data/Source/states.json'));
+        $citiesRaw = file_get_contents(app_path('Containers/Larabeans/Locationer/Data/Source/cities.json'));
 
         $countries = json_decode($countriesRaw, true);
         $states = json_decode($statesRaw, true);

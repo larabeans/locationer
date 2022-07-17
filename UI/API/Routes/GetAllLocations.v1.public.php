@@ -21,7 +21,7 @@
  * @apiUse             GeneralSuccessMultipleResponse
  */
 
-use App\Containers\Vendor\Locationer\UI\API\Controllers\Controller;
+use App\Containers\Larabeans\Locationer\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::get('locations', [Controller::class, 'getAllLocations'])

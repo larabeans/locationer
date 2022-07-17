@@ -19,7 +19,7 @@
 }
  */
 
-use App\Containers\Vendor\Locationer\UI\API\Controllers\LanguageController;
+use App\Containers\Larabeans\Locationer\UI\API\Controllers\LanguageController;
 use Illuminate\Support\Facades\Route;
 
 Route::delete('language/{id}', [LanguageController::class, 'deleteLanguage'])

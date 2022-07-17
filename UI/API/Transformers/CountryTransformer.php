@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\UI\API\Transformers;
+namespace App\Containers\Larabeans\Locationer\UI\API\Transformers;
 
-use App\Containers\Vendor\Locationer\Models\Country;
-use App\Containers\Vendor\Locationer\Models\City;
-use App\Containers\Vendor\Locationer\Models\Location;
+use App\Containers\Larabeans\Locationer\Models\Country;
+use App\Containers\Larabeans\Locationer\Models\City;
+use App\Containers\Larabeans\Locationer\Models\Location;
 use App\Ship\Parents\Transformers\Transformer;
 
 class CountryTransformer extends Transformer

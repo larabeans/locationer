@@ -19,7 +19,7 @@
  * }
  */
 
-use App\Containers\Vendor\Locationer\UI\API\Controllers\CountryController;
+use App\Containers\Larabeans\Locationer\UI\API\Controllers\CountryController;
 use Illuminate\Support\Facades\Route;
 
 Route::delete('countries/{id}', [CountryController::class, 'deleteCountry'])

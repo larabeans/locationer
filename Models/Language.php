@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\Models;
+namespace App\Containers\Larabeans\Locationer\Models;
 
 use App\Ship\Parents\Models\Model;
 

@@ -1,28 +1,28 @@
 <?php
 
-namespace App\Containers\Vendor\Locationer\UI\API\Controllers;
+namespace App\Containers\Larabeans\Locationer\UI\API\Controllers;
 
-use App\Containers\Vendor\Locationer\Actions\CreateLocationAction;
-use App\Containers\Vendor\Locationer\Actions\DeleteLocationAction;
-use App\Containers\Vendor\Locationer\Actions\FindLocationAction;
-use App\Containers\Vendor\Locationer\Actions\GetAllLocationsAction;
-use App\Containers\Vendor\Locationer\Actions\UpdateLocationAction;
-use App\Containers\Vendor\Locationer\Actions\GetLocationByLocatableTypeAction;
-use App\Containers\Vendor\Locationer\Actions\GetAllLocateTypesAction;
-use App\Containers\Vendor\Locationer\UI\API\Requests\CreateLocationRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\DeleteLocationRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllLocationsRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\FindLocationRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\UpdateLocationRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\GetLocationByLocatableTypeRequest;
-use App\Containers\Vendor\Locationer\UI\API\Requests\GetAllLocatableTypesRequest;
-use App\Containers\Vendor\Locationer\UI\API\Transformers\LocationTransformer;
+use App\Containers\Larabeans\Locationer\Actions\CreateLocationAction;
+use App\Containers\Larabeans\Locationer\Actions\DeleteLocationAction;
+use App\Containers\Larabeans\Locationer\Actions\FindLocationAction;
+use App\Containers\Larabeans\Locationer\Actions\GetAllLocationsAction;
+use App\Containers\Larabeans\Locationer\Actions\UpdateLocationAction;
+use App\Containers\Larabeans\Locationer\Actions\GetLocationByLocatableTypeAction;
+use App\Containers\Larabeans\Locationer\Actions\GetAllLocateTypesAction;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\CreateLocationRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\DeleteLocationRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\GetAllLocationsRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\FindLocationRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\UpdateLocationRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\GetLocationByLocatableTypeRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Requests\GetAllLocatableTypesRequest;
+use App\Containers\Larabeans\Locationer\UI\API\Transformers\LocationTransformer;
 use App\Ship\Parents\Controllers\ApiController;
 
 /**
  * Class Controller
  *
- * @package App\Containers\Vendor\Locationer\UI\API\Controllers
+ * @package App\Containers\Larabeans\Locationer\UI\API\Controllers
  */
 class Controller extends ApiController
 {
