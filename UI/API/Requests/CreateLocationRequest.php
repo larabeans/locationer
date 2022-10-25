@@ -15,7 +15,7 @@ class CreateLocationRequest extends Request
      * @var  array
      */
     protected $access = [
-        'permissions' => 'manage-locations|create-location',
+        'permissions' => '',
         'roles' => '',
     ];
 
@@ -45,9 +45,7 @@ class CreateLocationRequest extends Request
     {
         return [
             'locatable_type' => 'required',
-            'locatable_id' => 'required',
-            'address_line_1' => 'required',
-            'address_line_2' => 'required',
+            'locatable_id' => 'required'
         ];
     }
 
